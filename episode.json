@@ -1,0 +1,3326 @@
+{
+    "projectName": "bu",
+    "characterRoster": [
+        {
+            "id": "cast_1781922343005",
+            "name": "翡翠",
+            "characterTypeId": "type_1",
+            "defaultExpression": "翡翠",
+            "expressions": {
+                "翡翠": {
+                    "spriteAsset": "spr_cast_1781922343005___"
+                }
+            },
+            "unifiedOverrides": {}
+        },
+        {
+            "id": "cast_1781922431872",
+            "name": "托帕",
+            "characterTypeId": "type_1",
+            "defaultExpression": "托帕",
+            "expressions": {
+                "托帕": {
+                    "spriteAsset": "spr_cast_1781922431872___"
+                }
+            },
+            "unifiedOverrides": {}
+        },
+        {
+            "id": "cast_1781922451646",
+            "name": "真理",
+            "characterTypeId": "type_1",
+            "defaultExpression": "真理",
+            "expressions": {
+                "真理": {
+                    "spriteAsset": "spr_cast_1781922451646___"
+                },
+                "真理皱眉": {
+                    "spriteAsset": "spr_cast_1781922451646_____",
+                    "defaultLayout": {
+                        "panX": -21,
+                        "panY": 321,
+                        "zoom": 1.4
+                    }
+                }
+            },
+            "unifiedOverrides": {}
+        }
+    ],
+    "unifiedAttributes": [],
+    "relationAttributes": {
+        "cast_1781922343005": {},
+        "cast_1781922431872": {},
+        "cast_1781922451646": {}
+    },
+    "typewriterMsPerChar": 35,
+    "speakerNameColor": "#e8e8e8",
+    "embeddedAssetLibrary": {
+        "characters": [
+            {
+                "name": "spr_cast_1781922343005___",
+                "path": "assets/characters/spr_cast_1781922343005___.webp"
+            },
+            {
+                "name": "spr_cast_1781922431872___",
+                "path": "assets/characters/spr_cast_1781922431872___.webp"
+            },
+            {
+                "name": "spr_cast_1781922451646___",
+                "path": "assets/characters/spr_cast_1781922451646____2.webp"
+            },
+            {
+                "name": "spr_cast_1781922451646_____",
+                "path": "assets/characters/spr_cast_1781922451646_____.webp"
+            }
+        ],
+        "backgrounds": [
+            {
+                "name": "医院",
+                "path": "assets/backgrounds/医院.webp"
+            }
+        ],
+        "storyGraphics": [
+            {
+                "name": "1",
+                "path": "assets/story_graphics/1.webp"
+            },
+            {
+                "name": "呵呵3",
+                "path": "assets/story_graphics/呵呵3.webp"
+            },
+            {
+                "name": "3",
+                "path": "assets/story_graphics/3.webp"
+            },
+            {
+                "name": "2",
+                "path": "assets/story_graphics/2.webp"
+            },
+            {
+                "name": "4",
+                "path": "assets/story_graphics/4.webp"
+            },
+            {
+                "name": "5",
+                "path": "assets/story_graphics/5.webp"
+            },
+            {
+                "name": "6",
+                "path": "assets/story_graphics/6.webp"
+            },
+            {
+                "name": "呵呵1",
+                "path": "assets/story_graphics/呵呵1.webp"
+            },
+            {
+                "name": "呵呵2",
+                "path": "assets/story_graphics/呵呵2.webp"
+            },
+            {
+                "name": "仓库 (1)",
+                "path": "assets/story_graphics/仓库 (1).webp"
+            },
+            {
+                "name": "仓库 (2)",
+                "path": "assets/story_graphics/仓库 (2).webp"
+            },
+            {
+                "name": "仓库 (3)",
+                "path": "assets/story_graphics/仓库 (3).webp"
+            },
+            {
+                "name": "仓库 (4)",
+                "path": "assets/story_graphics/仓库 (4).webp"
+            },
+            {
+                "name": "仓库 (5)",
+                "path": "assets/story_graphics/仓库 (5).webp"
+            },
+            {
+                "name": "仓库 (6)",
+                "path": "assets/story_graphics/仓库 (6).webp"
+            },
+            {
+                "name": "仓库 (7)",
+                "path": "assets/story_graphics/仓库 (7).webp"
+            },
+            {
+                "name": "仓库 (8)",
+                "path": "assets/story_graphics/仓库 (8).webp"
+            },
+            {
+                "name": "仓库 (9)",
+                "path": "assets/story_graphics/仓库 (9).webp"
+            },
+            {
+                "name": "仓库 (10)",
+                "path": "assets/story_graphics/仓库 (10).webp"
+            },
+            {
+                "name": "仓库 (11)",
+                "path": "assets/story_graphics/仓库 (11).webp"
+            },
+            {
+                "name": "仓库 (12)",
+                "path": "assets/story_graphics/仓库 (12).webp"
+            },
+            {
+                "name": "仓库 (13)",
+                "path": "assets/story_graphics/仓库 (13).webp"
+            },
+            {
+                "name": "暗杀 (1)",
+                "path": "assets/story_graphics/暗杀 (1).webp"
+            },
+            {
+                "name": "暗杀 (2)",
+                "path": "assets/story_graphics/暗杀 (2).webp"
+            },
+            {
+                "name": "暗杀 (3)",
+                "path": "assets/story_graphics/暗杀 (3).webp"
+            },
+            {
+                "name": "暗杀 (4)",
+                "path": "assets/story_graphics/暗杀 (4).webp"
+            },
+            {
+                "name": "暗杀 (5)",
+                "path": "assets/story_graphics/暗杀 (5).webp"
+            },
+            {
+                "name": "暗杀 (6)",
+                "path": "assets/story_graphics/暗杀 (6).webp"
+            },
+            {
+                "name": "暗杀 (7)",
+                "path": "assets/story_graphics/暗杀 (7).webp"
+            },
+            {
+                "name": "暗杀 (8)",
+                "path": "assets/story_graphics/暗杀 (8).webp"
+            },
+            {
+                "name": "暗杀 (9)",
+                "path": "assets/story_graphics/暗杀 (9).webp"
+            },
+            {
+                "name": "暗杀 (10)",
+                "path": "assets/story_graphics/暗杀 (10).webp"
+            },
+            {
+                "name": "暗杀 (11)",
+                "path": "assets/story_graphics/暗杀 (11).webp"
+            },
+            {
+                "name": "醒来 (1)",
+                "path": "assets/story_graphics/醒来 (1).webp"
+            },
+            {
+                "name": "醒来 (2)",
+                "path": "assets/story_graphics/醒来 (2).webp"
+            },
+            {
+                "name": "醒来 (3)",
+                "path": "assets/story_graphics/醒来 (3).webp"
+            },
+            {
+                "name": "醒来 (4)",
+                "path": "assets/story_graphics/醒来 (4).webp"
+            },
+            {
+                "name": "醒来 (5)",
+                "path": "assets/story_graphics/醒来 (5).webp"
+            },
+            {
+                "name": "醒来 (6)",
+                "path": "assets/story_graphics/醒来 (6).webp"
+            },
+            {
+                "name": "醒来 (7)",
+                "path": "assets/story_graphics/醒来 (7).webp"
+            },
+            {
+                "name": "醒来 (8)",
+                "path": "assets/story_graphics/醒来 (8).webp"
+            },
+            {
+                "name": "醒来 (9)",
+                "path": "assets/story_graphics/醒来 (9).webp"
+            },
+            {
+                "name": "醒来 (10)",
+                "path": "assets/story_graphics/醒来 (10).webp"
+            },
+            {
+                "name": "醒来 (11)",
+                "path": "assets/story_graphics/醒来 (11).webp"
+            },
+            {
+                "name": "醒来 (12)",
+                "path": "assets/story_graphics/醒来 (12).webp"
+            },
+            {
+                "name": "醒来 (13)",
+                "path": "assets/story_graphics/醒来 (13).webp"
+            },
+            {
+                "name": "醒来 (14)",
+                "path": "assets/story_graphics/醒来 (14).webp"
+            },
+            {
+                "name": "醒来 (15)",
+                "path": "assets/story_graphics/醒来 (15).webp"
+            },
+            {
+                "name": "醒来 (16)",
+                "path": "assets/story_graphics/醒来 (16).webp"
+            },
+            {
+                "name": "召集会议 (1)",
+                "path": "assets/story_graphics/召集会议 (1).webp"
+            },
+            {
+                "name": "召集会议 (2)",
+                "path": "assets/story_graphics/召集会议 (2).webp"
+            },
+            {
+                "name": "召集会议 (3)",
+                "path": "assets/story_graphics/召集会议 (3).webp"
+            },
+            {
+                "name": "召集会议 (4)",
+                "path": "assets/story_graphics/召集会议 (4).webp"
+            },
+            {
+                "name": "召集会议 (5)",
+                "path": "assets/story_graphics/召集会议 (5).webp"
+            },
+            {
+                "name": "召集会议 (6)",
+                "path": "assets/story_graphics/召集会议 (6).webp"
+            },
+            {
+                "name": "召集会议 (7)",
+                "path": "assets/story_graphics/召集会议 (7).webp"
+            },
+            {
+                "name": "召集会议 (8)",
+                "path": "assets/story_graphics/召集会议 (8).webp"
+            },
+            {
+                "name": "谈判 (1)",
+                "path": "assets/story_graphics/谈判 (1).webp"
+            },
+            {
+                "name": "谈判 (2)",
+                "path": "assets/story_graphics/谈判 (2).webp"
+            },
+            {
+                "name": "谈判 (3)",
+                "path": "assets/story_graphics/谈判 (3).webp"
+            },
+            {
+                "name": "谈判 (4)",
+                "path": "assets/story_graphics/谈判 (4).webp"
+            },
+            {
+                "name": "谈判 (5)",
+                "path": "assets/story_graphics/谈判 (5).webp"
+            },
+            {
+                "name": "谈判 (6)",
+                "path": "assets/story_graphics/谈判 (6).webp"
+            },
+            {
+                "name": "谈判 (7)",
+                "path": "assets/story_graphics/谈判 (7).webp"
+            },
+            {
+                "name": "谈判 (8)",
+                "path": "assets/story_graphics/谈判 (8).webp"
+            },
+            {
+                "name": "谈判 (9)",
+                "path": "assets/story_graphics/谈判 (9).webp"
+            },
+            {
+                "name": "谈判 (10)",
+                "path": "assets/story_graphics/谈判 (10).webp"
+            },
+            {
+                "name": "谈判 (11)",
+                "path": "assets/story_graphics/谈判 (11).webp"
+            },
+            {
+                "name": "谈判 (12)",
+                "path": "assets/story_graphics/谈判 (12).webp"
+            },
+            {
+                "name": "谈判 (13)",
+                "path": "assets/story_graphics/谈判 (13).webp"
+            },
+            {
+                "name": "谈判 (14)",
+                "path": "assets/story_graphics/谈判 (14).webp"
+            },
+            {
+                "name": "谈判 (15)",
+                "path": "assets/story_graphics/谈判 (15).webp"
+            },
+            {
+                "name": "谈判 (16)",
+                "path": "assets/story_graphics/谈判 (16).webp"
+            },
+            {
+                "name": "谈判 (17)",
+                "path": "assets/story_graphics/谈判 (17).webp"
+            },
+            {
+                "name": "谈判 (18)",
+                "path": "assets/story_graphics/谈判 (18).webp"
+            },
+            {
+                "name": "谈判 (19)",
+                "path": "assets/story_graphics/谈判 (19).webp"
+            },
+            {
+                "name": "谈判 (20)",
+                "path": "assets/story_graphics/谈判 (20).webp"
+            },
+            {
+                "name": "谈判 (21)",
+                "path": "assets/story_graphics/谈判 (21).webp"
+            },
+            {
+                "name": "谈判 (22)",
+                "path": "assets/story_graphics/谈判 (22).webp"
+            },
+            {
+                "name": "谈判 (23)",
+                "path": "assets/story_graphics/谈判 (23).webp"
+            },
+            {
+                "name": "谈判 (24)",
+                "path": "assets/story_graphics/谈判 (24).webp"
+            },
+            {
+                "name": "谈判 (25)",
+                "path": "assets/story_graphics/谈判 (25).webp"
+            },
+            {
+                "name": "谈判 (26)",
+                "path": "assets/story_graphics/谈判 (26).webp"
+            },
+            {
+                "name": "谈判 (27)",
+                "path": "assets/story_graphics/谈判 (27).webp"
+            },
+            {
+                "name": "谈判 (28)",
+                "path": "assets/story_graphics/谈判 (28).webp"
+            },
+            {
+                "name": "谈判 (29)",
+                "path": "assets/story_graphics/谈判 (29).webp"
+            },
+            {
+                "name": "夜总会走廊 (1)",
+                "path": "assets/story_graphics/夜总会走廊 (1).webp"
+            },
+            {
+                "name": "夜总会走廊 (2)",
+                "path": "assets/story_graphics/夜总会走廊 (2).webp"
+            },
+            {
+                "name": "夜总会走廊 (3)",
+                "path": "assets/story_graphics/夜总会走廊 (3).webp"
+            },
+            {
+                "name": "逼供 (1)",
+                "path": "assets/story_graphics/逼供 (1).webp"
+            },
+            {
+                "name": "逼供 (2)",
+                "path": "assets/story_graphics/逼供 (2).webp"
+            },
+            {
+                "name": "逼供 (3)",
+                "path": "assets/story_graphics/逼供 (3).webp"
+            },
+            {
+                "name": "逼供 (4)",
+                "path": "assets/story_graphics/逼供 (4).webp"
+            },
+            {
+                "name": "逼供 (5)",
+                "path": "assets/story_graphics/逼供 (5).webp"
+            },
+            {
+                "name": "逼供 (6)",
+                "path": "assets/story_graphics/逼供 (6).webp"
+            },
+            {
+                "name": "逼供 (7)",
+                "path": "assets/story_graphics/逼供 (7).webp"
+            },
+            {
+                "name": "逼供 (8)",
+                "path": "assets/story_graphics/逼供 (8).webp"
+            },
+            {
+                "name": "逼供 (9)",
+                "path": "assets/story_graphics/逼供 (9).webp"
+            },
+            {
+                "name": "逼供 (10)",
+                "path": "assets/story_graphics/逼供 (10).webp"
+            },
+            {
+                "name": "逼供 (11)",
+                "path": "assets/story_graphics/逼供 (11).webp"
+            },
+            {
+                "name": "逼供 (12)",
+                "path": "assets/story_graphics/逼供 (12).webp"
+            },
+            {
+                "name": "病房外回忆 (1)",
+                "path": "assets/story_graphics/病房外回忆 (1).webp"
+            },
+            {
+                "name": "病房外回忆 (2)",
+                "path": "assets/story_graphics/病房外回忆 (2).webp"
+            },
+            {
+                "name": "病房外回忆 (3)",
+                "path": "assets/story_graphics/病房外回忆 (3).webp"
+            },
+            {
+                "name": "病房外回忆 (4)",
+                "path": "assets/story_graphics/病房外回忆 (4).webp"
+            },
+            {
+                "name": "病房外回忆 (5)",
+                "path": "assets/story_graphics/病房外回忆 (5).webp"
+            },
+            {
+                "name": "病房外回忆 (6)",
+                "path": "assets/story_graphics/病房外回忆 (6).webp"
+            },
+            {
+                "name": "病房外回忆 (7)",
+                "path": "assets/story_graphics/病房外回忆 (7).webp"
+            },
+            {
+                "name": "病房外回忆 (8)",
+                "path": "assets/story_graphics/病房外回忆 (8).webp"
+            },
+            {
+                "name": "病房外回忆 (9)",
+                "path": "assets/story_graphics/病房外回忆 (9).webp"
+            },
+            {
+                "name": "病房外回忆 (10)",
+                "path": "assets/story_graphics/病房外回忆 (10).webp"
+            },
+            {
+                "name": "病房外回忆 (11)",
+                "path": "assets/story_graphics/病房外回忆 (11).webp"
+            },
+            {
+                "name": "病房外回忆 (12)",
+                "path": "assets/story_graphics/病房外回忆 (12).webp"
+            },
+            {
+                "name": "病房外回忆 (13)",
+                "path": "assets/story_graphics/病房外回忆 (13).webp"
+            },
+            {
+                "name": "病房外回忆 (14)",
+                "path": "assets/story_graphics/病房外回忆 (14).webp"
+            },
+            {
+                "name": "病房外回忆 (15)",
+                "path": "assets/story_graphics/病房外回忆 (15).webp"
+            },
+            {
+                "name": "病房外回忆 (16)",
+                "path": "assets/story_graphics/病房外回忆 (16).webp"
+            },
+            {
+                "name": "病房外回忆 (17)",
+                "path": "assets/story_graphics/病房外回忆 (17).webp"
+            },
+            {
+                "name": "病房外回忆 (18)",
+                "path": "assets/story_graphics/病房外回忆 (18).webp"
+            },
+            {
+                "name": "病房外回忆 (19)",
+                "path": "assets/story_graphics/病房外回忆 (19).webp"
+            },
+            {
+                "name": "病房里给袖扣 (1)",
+                "path": "assets/story_graphics/病房里给袖扣 (1).webp"
+            },
+            {
+                "name": "病房里给袖扣 (2)",
+                "path": "assets/story_graphics/病房里给袖扣 (2).webp"
+            },
+            {
+                "name": "病房里给袖扣 (3)",
+                "path": "assets/story_graphics/病房里给袖扣 (3).webp"
+            },
+            {
+                "name": "病房里给袖扣 (4)",
+                "path": "assets/story_graphics/病房里给袖扣 (4).webp"
+            },
+            {
+                "name": "病房里给袖扣 (5)",
+                "path": "assets/story_graphics/病房里给袖扣 (5).webp"
+            },
+            {
+                "name": "病房里给袖扣 (6)",
+                "path": "assets/story_graphics/病房里给袖扣 (6).webp"
+            },
+            {
+                "name": "5月31日 (3)",
+                "path": "assets/story_graphics/5月31日 (3).webp"
+            },
+            {
+                "name": "病房里给袖扣 (7)",
+                "path": "assets/story_graphics/病房里给袖扣 (7).webp"
+            },
+            {
+                "name": "病房里给袖扣 (8)",
+                "path": "assets/story_graphics/病房里给袖扣 (8).webp"
+            },
+            {
+                "name": "病房里给袖扣 (9)",
+                "path": "assets/story_graphics/病房里给袖扣 (9).webp"
+            },
+            {
+                "name": "病房里给袖扣 (10)",
+                "path": "assets/story_graphics/病房里给袖扣 (10).webp"
+            },
+            {
+                "name": "2026-05-29-15h10m17s_seed298775034_杰出的优质视频，一只手搂着红衣人",
+                "path": "assets/story_graphics/2026-05-29-15h10m17s_seed298775034_杰出的优质视频，一只手搂着红衣人.webp"
+            },
+            {
+                "name": "呵呵3 - 副本",
+                "path": "assets/story_graphics/呵呵3 - 副本.webp"
+            }
+        ],
+        "items": [
+            {
+                "name": "戒指",
+                "path": "assets/items/戒指.webp"
+            },
+            {
+                "name": "手表",
+                "path": "assets/items/手表.webp"
+            },
+            {
+                "name": "月桂叶头饰",
+                "path": "assets/items/月桂叶头饰.webp"
+            },
+            {
+                "name": "筹码",
+                "path": "assets/items/筹码.webp"
+            },
+            {
+                "name": "钥匙",
+                "path": "assets/items/钥匙.webp"
+            }
+        ],
+        "music": [
+            {
+                "name": "悲伤59",
+                "path": "assets/music/悲伤59.mp3"
+            },
+            {
+                "name": "刺激对峙",
+                "path": "assets/music/刺激对峙.mp3"
+            },
+            {
+                "name": "紧张气氛",
+                "path": "assets/music/紧张气氛.mp3"
+            },
+            {
+                "name": "逼供",
+                "path": "assets/music/逼供.mp3"
+            },
+            {
+                "name": "宁静到绮丽",
+                "path": "assets/music/宁静到绮丽.mp3"
+            },
+            {
+                "name": "谈判紧张",
+                "path": "assets/music/谈判紧张.mp3"
+            },
+            {
+                "name": "回忆",
+                "path": "assets/music/回忆.mp3"
+            },
+            {
+                "name": "悲伤5",
+                "path": "assets/music/悲伤5.mp3"
+            },
+            {
+                "name": "仓库接吻",
+                "path": "assets/music/仓库接吻.mp3"
+            },
+            {
+                "name": "仓库接吻短",
+                "path": "assets/music/仓库接吻短.mp3"
+            },
+            {
+                "name": "日常钢琴循环",
+                "path": "assets/music/日常钢琴循环.mp3"
+            },
+            {
+                "name": "舒缓",
+                "path": "assets/music/舒缓.mp3"
+            },
+            {
+                "name": "谈判",
+                "path": "assets/music/谈判.mp3"
+            },
+            {
+                "name": "醒来",
+                "path": "assets/music/醒来.mp3"
+            },
+            {
+                "name": "性感",
+                "path": "assets/music/性感.mp3"
+            },
+            {
+                "name": "universfield-medical-monitor-153306",
+                "path": "assets/music/universfield-medical-monitor-153306.mp3"
+            }
+        ],
+        "sounds": [
+            {
+                "name": "universfield-medical-monitor-153306",
+                "path": "assets/sounds/universfield-medical-monitor-153306.mp3"
+            },
+            {
+                "name": "soundreality-door-opening-2-455061",
+                "path": "assets/sounds/soundreality-door-opening-2-455061.mp3"
+            },
+            {
+                "name": "加分",
+                "path": "assets/sounds/加分.mp3"
+            }
+        ]
+    },
+    "quizGames": [],
+    "storyModules": [],
+    "reuseModules": [],
+    "variableRelationTables": [],
+    "autoAnnouncementRules": [],
+    "autoJumpRules": [],
+    "topicPoolModules": [
+        {
+            "id": "tpmod_mqrlsmjp_53393a",
+            "name": "序章对话",
+            "skipMissingSpeaker": true,
+            "requirePresentSpeakers": false,
+            "items": [
+                {
+                    "id": "tpitem_mqrlstwr_ea0bda",
+                    "title": "序章对话",
+                    "rawText": "托帕：教授，辛苦你一直守在这里。\n托帕：照顾这家伙一定很累吧？\n翡翠：你说他醒过来了，但发生了异常情况？\n真理：好消息是，他的身体没有大碍。\n真理：坏消息是，他现在必须用镇定剂才能控制。\n真理：幸亏你们上午不在，错过了那个地狱般的场面。\n托帕：……他身上增加了束缚带，难道是有暴力行为？\n真理皱眉：他今天险些就用输液管勒死了两个人。\n翡翠：这个状态听起来……像是我初次见他时，那个戴着镣铐的他。\n真理皱眉：你猜得没错。\n真理皱眉：砂金的记忆似乎回到了奴隶时期。\n真理皱眉：因为虚无的刀刃太过锋利，在令他梦中躯体破碎的同时，也侵蚀了他的精神。\n真理皱眉：砂金上午醒来的时候，认为自己还是当年那个珍稀的奴隶，\n真理皱眉：被当做高级货物在奴隶主之间频繁转手。\n真理皱眉：他防范着每一个人。\n真理皱眉：把所有人都当做随时可能虐杀他的凶手。\n真理皱眉：我所了解的赌徒是个不计后果的商人，\n真理皱眉：但这个曾是奴隶的他，血液中似乎只流淌着凶残和疯狂。\n托帕：怎么会这样？！\n托帕：难道凭借教授的智慧和这里的现实，\n托帕：无法说服他回归理性吗？\n真理：很遗憾，那个状态下的他\n真理：拥有着超过常人百倍的警戒心。\n真理：无论是我还是其他医护，都无法让他信任。\n真理皱眉：甚至还有人被他骗到近处，当做人质威胁我们放他离开。\n真理皱眉：从当时的对话中来看，他在奴隶期间也受到过类似的“戏耍”。\n真理皱眉：有些奴隶主会伪造一个虚假的环境，用来虐待奴隶、观赏他们的惨状。\n旁白：真理锋利的声音中压抑着愤怒。\n旁白：但他迅速把自己泄露出来的情绪掩盖住了。\n真理：这些奴隶主卑劣的行为不值得细讲。\n真理：但我认为，砂金此刻的戒心是合理的——也是无法消除的。\n旁白：病房里一时陷入了沉寂。\n旁白：他们或多或少都了解一部分砂金的过去。\n旁白：但砂金一向不提起这些，总是展现给外界放肆张扬的形象。\n旁白：因此，当这些“过去”的影子重新出现在砂金身上时，\n旁白：他们才更深刻地明白……\n旁白：那个从茨冈尼亚的绝境中走到公司高层的砂金，\n旁白：身上层叠着常人难以想象的伤口。\n翡翠：他付出了太多代价，也承受了太多。\n翡翠：那么，教授对砂金现在的情况作何判断？\n翡翠：他作为公司高层，近期还有许多事务需要他的决策和现身。\n真理：靠医学手段恢复的话，\n真理：至少需要半年到一年时间。\n真理：如果借助奇物或者其他手段，或许可以加快速度。\n真理：但这仍然需要谨慎的测试。\n真理：（我无法……冒着令他受伤的风险去实验。）\n翡翠：我理解，但我们还有另一个问题需要解决。\n翡翠：市场开拓部最近的动向十分可疑，\n翡翠：在公司内部，他们和战投部的关系也越来越紧张。\n翡翠：砂金是战投部的重要成员，\n翡翠：如果他失忆的消息传出去，市场开拓部一定会趁虚而入。\n翡翠：我们需要封锁消息，让他暂时转移到一个安全的地方。\n真理：……\n旁白：真理罕见地没有快速回应翡翠的问题。\n托帕：放在我家怎么样？\n托帕：账账和我的小动物们会照顾好他的。\n翡翠：那我恐怕要担心你的安全了，小叶琳娜。\n翡翠：他现在的状态太过不稳定，如果他伤害到了你，他自己也会难过的。\n托帕：好吧，看来你已经有选择了。\n翡翠：教授，你考虑好了吗？\n真理：你早就决定了，没有我拒绝的可能性。\n翡翠：你会拒绝吗？\n真理：……\n旁白：真理一时被问住了。\n旁白：他知道自己是最优的选择，他了解砂金，也有丰富的医学知识。\n旁白：他希望砂金能更快恢复健康，但他不知道的是……\n旁白：如果砂金住在他家，他能否应对这突如其来的密切距离。\n旁白：监护仪器的滴滴声绵长不休，像是真理始终沉重的心跳。\n真理：明早前我会把他转移到我家。\n翡翠：非常感谢，教授。我会替你把一切手续办好，\n翡翠：也会对外宣称砂金已经恢复，正在你家中接受后续疗养。\n翡翠：我相信……只有你能照顾好他。\n旁白：简单的交接后，翡翠和托帕离开了病房。\n旁白：她们讨论后续方案的声音渐渐远去。\n旁白：病房里重新安静下来，\n旁白：真理又能听到砂金微弱的呼吸声了。\n",
+                    "steps": [
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "教授，辛苦你一直守在这里。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "照顾这家伙一定很累吧？",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "你说他醒过来了，但发生了异常情况？",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "好消息是，他的身体没有大碍。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "坏消息是，他现在必须用镇定剂才能控制。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "幸亏你们上午不在，错过了那个地狱般的场面。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "……他身上增加了束缚带，难道是有暴力行为？",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "他今天险些就用输液管勒死了两个人。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "这个状态听起来……像是我初次见他时，那个戴着镣铐的他。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "你猜得没错。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "砂金的记忆似乎回到了奴隶时期。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "因为虚无的刀刃太过锋利，在令他梦中躯体破碎的同时，也侵蚀了他的精神。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "砂金上午醒来的时候，认为自己还是当年那个珍稀的奴隶，",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "被当做高级货物在奴隶主之间频繁转手。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "他防范着每一个人。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "把所有人都当做随时可能虐杀他的凶手。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "我所了解的赌徒是个不计后果的商人，",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "但这个曾是奴隶的他，血液中似乎只流淌着凶残和疯狂。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "怎么会这样？！",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "难道凭借教授的智慧和这里的现实，",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "无法说服他回归理性吗？",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "很遗憾，那个状态下的他",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "拥有着超过常人百倍的警戒心。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "无论是我还是其他医护，都无法让他信任。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "甚至还有人被他骗到近处，当做人质威胁我们放他离开。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "从当时的对话中来看，他在奴隶期间也受到过类似的“戏耍”。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "皱眉",
+                            "text": "有些奴隶主会伪造一个虚假的环境，用来虐待奴隶、观赏他们的惨状。",
+                            "missingSpeaker": false,
+                            "expressionFallback": true
+                        },
+                        {
+                            "type": "narration",
+                            "text": "真理锋利的声音中压抑着愤怒。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "但他迅速把自己泄露出来的情绪掩盖住了。"
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "这些奴隶主卑劣的行为不值得细讲。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "但我认为，砂金此刻的戒心是合理的——也是无法消除的。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "narration",
+                            "text": "病房里一时陷入了沉寂。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "他们或多或少都了解一部分砂金的过去。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "但砂金一向不提起这些，总是展现给外界放肆张扬的形象。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "因此，当这些“过去”的影子重新出现在砂金身上时，"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "他们才更深刻地明白……"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "那个从茨冈尼亚的绝境中走到公司高层的砂金，"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "身上层叠着常人难以想象的伤口。"
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "他付出了太多代价，也承受了太多。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "那么，教授对砂金现在的情况作何判断？",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "他作为公司高层，近期还有许多事务需要他的决策和现身。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "靠医学手段恢复的话，",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "至少需要半年到一年时间。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "如果借助奇物或者其他手段，或许可以加快速度。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "但这仍然需要谨慎的测试。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（我无法……冒着令他受伤的风险去实验。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "我理解，但我们还有另一个问题需要解决。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "市场开拓部最近的动向十分可疑，",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "在公司内部，他们和战投部的关系也越来越紧张。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "砂金是战投部的重要成员，",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "如果他失忆的消息传出去，市场开拓部一定会趁虚而入。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "我们需要封锁消息，让他暂时转移到一个安全的地方。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "……",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "narration",
+                            "text": "真理罕见地没有快速回应翡翠的问题。"
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "放在我家怎么样？",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "账账和我的小动物们会照顾好他的。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "那我恐怕要担心你的安全了，小叶琳娜。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "他现在的状态太过不稳定，如果他伤害到了你，他自己也会难过的。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922431872",
+                            "speakerName": "托帕",
+                            "expression": "托帕",
+                            "requestedExpression": "",
+                            "text": "好吧，看来你已经有选择了。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "教授，你考虑好了吗？",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "你早就决定了，没有我拒绝的可能性。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "你会拒绝吗？",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "……",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "narration",
+                            "text": "真理一时被问住了。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "他知道自己是最优的选择，他了解砂金，也有丰富的医学知识。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "他希望砂金能更快恢复健康，但他不知道的是……"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "如果砂金住在他家，他能否应对这突如其来的密切距离。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "监护仪器的滴滴声绵长不休，像是真理始终沉重的心跳。"
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "明早前我会把他转移到我家。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "非常感谢，教授。我会替你把一切手续办好，",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "也会对外宣称砂金已经恢复，正在你家中接受后续疗养。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922343005",
+                            "speakerName": "翡翠",
+                            "expression": "翡翠",
+                            "requestedExpression": "",
+                            "text": "我相信……只有你能照顾好他。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "narration",
+                            "text": "简单的交接后，翡翠和托帕离开了病房。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "她们讨论后续方案的声音渐渐远去。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "病房里重新安静下来，"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "真理又能听到砂金微弱的呼吸声了。"
+                        }
+                    ],
+                    "enabled": true,
+                    "condition": null,
+                    "speakers": [
+                        "cast_1781922431872",
+                        "cast_1781922343005",
+                        "cast_1781922451646"
+                    ],
+                    "parseWarnings": [
+                        {
+                            "line": 8,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：他今天险些就用输液管勒死了两个人。"
+                        },
+                        {
+                            "line": 10,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：你猜得没错。"
+                        },
+                        {
+                            "line": 11,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：砂金的记忆似乎回到了奴隶时期。"
+                        },
+                        {
+                            "line": 12,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：因为虚无的刀刃太过锋利，在令他梦中躯体破碎的同时，也侵蚀了他的精神。"
+                        },
+                        {
+                            "line": 13,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：砂金上午醒来的时候，认为自己还是当年那个珍稀的奴隶，"
+                        },
+                        {
+                            "line": 14,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：被当做高级货物在奴隶主之间频繁转手。"
+                        },
+                        {
+                            "line": 15,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：他防范着每一个人。"
+                        },
+                        {
+                            "line": 16,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：把所有人都当做随时可能虐杀他的凶手。"
+                        },
+                        {
+                            "line": 17,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：我所了解的赌徒是个不计后果的商人，"
+                        },
+                        {
+                            "line": 18,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：但这个曾是奴隶的他，血液中似乎只流淌着凶残和疯狂。"
+                        },
+                        {
+                            "line": 25,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：甚至还有人被他骗到近处，当做人质威胁我们放他离开。"
+                        },
+                        {
+                            "line": 26,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：从当时的对话中来看，他在奴隶期间也受到过类似的“戏耍”。"
+                        },
+                        {
+                            "line": 27,
+                            "type": "missing-expression",
+                            "message": "真理 没有「皱眉」立绘，已使用默认立绘。",
+                            "text": "真理皱眉：有些奴隶主会伪造一个虚假的环境，用来虐待奴隶、观赏他们的惨状。"
+                        }
+                    ]
+                }
+            ],
+            "enabled": true,
+            "backgroundAlias": "医院",
+            "musicAlias": "",
+            "musicLoop": false,
+            "condition": null,
+            "exhaustedMessage": ""
+        },
+        {
+            "id": "tpmod_mqrps1kw_9cc13c",
+            "name": "序章对话2",
+            "skipMissingSpeaker": true,
+            "requirePresentSpeakers": false,
+            "items": [
+                {
+                    "id": "tpitem_mqrpsf2i_fb4b2b",
+                    "title": "真理：（翡翠是一位过分敏锐的女士。）",
+                    "rawText": "真理：（翡翠是一位过分敏锐的女士。）\n真理：（或许也是因为……关于砂金的事情，我越来越无法隐藏。）\n真理：（在我主动提出做砂金的主治医生时，翡翠想必就已经察觉到了。）\n真理：（我的意图……并不单纯。）\n真理：（我对砂金抱有某种感情。）\n真理：（无论是医生与患者之间，还是师生之间，都不该有的某种感情。）\n旁白：真理低下头，看向病床上被紧紧束缚着的纤细男性。\n真理：（但是失忆的他，并不知道我是谁。）\n真理：（上午他醒来的时候，看我的眼神就像是在看陌生人。）\n真理：（对于奴隶时期的他来说，我的衣着和那些虐待过他的“上等人”没有区别。\n真理：（他憎恨那些人，恨不得杀了他们。）\n旁白：男人发出了无声的苦笑。\n真理：（他也用这样冰冷的眼神看着我。）\n旁白：真理无法想象从明天起自己会过上怎样的生活。\n旁白：尽管真理曾经解决过无数困恼人类的世纪难题，也曾研究出无数伟大的发明。\n旁白：但此时的他，面临着他一生中最艰难的处境。\n旁白：他轻轻地摇了摇头，\n旁白：让那些无法理清的思绪沉入脑海深处。\n真理：我会照顾好你的，砂金。\n\n",
+                    "steps": [
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（翡翠是一位过分敏锐的女士。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（或许也是因为……关于砂金的事情，我越来越无法隐藏。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（在我主动提出做砂金的主治医生时，翡翠想必就已经察觉到了。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（我的意图……并不单纯。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（我对砂金抱有某种感情。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（无论是医生与患者之间，还是师生之间，都不该有的某种感情。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "narration",
+                            "text": "真理低下头，看向病床上被紧紧束缚着的纤细男性。"
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（但是失忆的他，并不知道我是谁。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（上午他醒来的时候，看我的眼神就像是在看陌生人。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（对于奴隶时期的他来说，我的衣着和那些虐待过他的“上等人”没有区别。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（他憎恨那些人，恨不得杀了他们。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "narration",
+                            "text": "男人发出了无声的苦笑。"
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "（他也用这样冰冷的眼神看着我。）",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        },
+                        {
+                            "type": "narration",
+                            "text": "真理无法想象从明天起自己会过上怎样的生活。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "尽管真理曾经解决过无数困恼人类的世纪难题，也曾研究出无数伟大的发明。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "但此时的他，面临着他一生中最艰难的处境。"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "他轻轻地摇了摇头，"
+                        },
+                        {
+                            "type": "narration",
+                            "text": "让那些无法理清的思绪沉入脑海深处。"
+                        },
+                        {
+                            "type": "dialogue",
+                            "speakerRef": "cast_1781922451646",
+                            "speakerName": "真理",
+                            "expression": "真理",
+                            "requestedExpression": "",
+                            "text": "我会照顾好你的，砂金。",
+                            "missingSpeaker": false,
+                            "expressionFallback": false
+                        }
+                    ],
+                    "enabled": true,
+                    "condition": null,
+                    "speakers": [
+                        "cast_1781922451646"
+                    ],
+                    "parseWarnings": []
+                }
+            ],
+            "enabled": true,
+            "backgroundAlias": "",
+            "musicAlias": "",
+            "musicLoop": false,
+            "condition": null,
+            "exhaustedMessage": ""
+        }
+    ],
+    "galleryModules": [
+        {
+            "id": "gal_mqrih5ho_f74888",
+            "name": "CG合集",
+            "kind": "endingCg",
+            "pageSize": 6,
+            "showLocked": true,
+            "character": {
+                "source": "all",
+                "typeIds": [],
+                "expressionKey": "",
+                "condition": {
+                    "type": "unified",
+                    "key": "玩家拥有",
+                    "op": "==",
+                    "value": 1
+                }
+            },
+            "endingCg": {
+                "source": "relationCg",
+                "sceneId": "scene_1780284783362",
+                "stepId": "",
+                "randomDisplayModuleId": "",
+                "itemIds": [],
+                "showUnknown": true
+            }
+        }
+    ],
+    "graphicReadingModules": [
+        {
+            "id": "grmod_mpu6rnt3_e5d4ec",
+            "title": "仓库",
+            "images": [
+                {
+                    "alias": "仓库 (1)",
+                    "title": "仓库 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (2)",
+                    "title": "仓库 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (3)",
+                    "title": "仓库 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (4)",
+                    "title": "仓库 (4)",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (5)",
+                    "title": "仓库 (5)",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (6)",
+                    "title": "仓库 (6)",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (7)",
+                    "title": "仓库 (7)",
+                    "index": 7,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (8)",
+                    "title": "仓库 (8)",
+                    "index": 8,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (9)",
+                    "title": "仓库 (9)",
+                    "index": 9,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (10)",
+                    "title": "仓库 (10)",
+                    "index": 10,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (11)",
+                    "title": "仓库 (11)",
+                    "index": 11,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (12)",
+                    "title": "仓库 (12)",
+                    "index": 12,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "仓库 (13)",
+                    "title": "仓库 (13)",
+                    "index": 13,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "刺激对峙",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\n夜晚，偏僻的仓库。\n几个手下守在仓库大门外，神色警惕。\n气氛压抑，紧张。\n一辆车飞快抵达。\n周扬沉着脸，从车里下来。\n图二\n离蔚被绑在仓库里，看似陷入昏迷。\n图三\n周扬走进仓库，脸上冷冷的，但眼中透出怒意。\n配合离蔚昏迷被捆绑的镜头，带出黑帮气味的紧张感\n吴铭：老大，人已经抓回来了。\n黑镜：老大你猜的没错，他真又跑洛辛江边港口的码头去了。\n吴铭：还有一件事，老大……我们离开前，洛辛的货轮发生了爆炸。\n周扬：不是叫你们一见到他就用麻醉剂吗？\n图四\n吴铭窘迫：他反应太快，昏迷前按下了引爆器，我们根本拦不住。\n图五\n周扬：怎么还没醒？\n吴铭：老大，他要醒了我们可按不住，所以麻醉量下得稍微……重了点。\n黑镜：再过半个小时应该就醒了。\n图六\n周扬：解开。\n图七\n手下：是，老大。\n图八\n绳索松开，假装昏迷的离蔚一跃而起。\n离蔚：不想活了，敢偷袭我。\n图九\n手下哀叫：离哥，不怪我，这是老大的命令。\n图十\n离蔚：少拿老大唬我。\n离蔚：眼里没我离哥是吧？\n图十一\n周扬：我看是你眼里根本没我这老大。\n周扬：我说过洛辛那边我来处理，你不许再擅自行动。\n离尉：要你管。\n周扬：我是老大，你是红棍。你说我管不管得了。\n图十二\n离尉：管什么管？就凭你那把破枪？\n图十三\n周扬：当然是……\n周扬：凭我这把真枪。\n\n",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpu9pwz7_c4398e",
+            "title": "夜总会询问",
+            "images": [
+                {
+                    "alias": "1",
+                    "title": "1",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "2",
+                    "title": "2",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "3",
+                    "title": "3",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "4",
+                    "title": "4",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "5",
+                    "title": "5",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "6",
+                    "title": "6",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "紧张气氛",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "darkFade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\n周扬在夜总会包厢里，脸色阴沉。\n图二\n洗手间里，手下正逼问着一个男人。\n图三\n问询结束，黑镜走回包厢。\n图四\n黑镜：老大，那小子坚持说袖扣是捡的，别的什么都不知道。\n周扬皱眉：离蔚呢？\n黑镜：他说从没见过离哥，更不知道这袖扣是离哥的。\n黑镜：打扫包厢时看见，觉得挺高档就顺手捡了，没想到变卖时被我们发现。\n周扬：说的是真话？\n黑镜：问到这种程度，他不敢撒谎。看来是真的不知道离哥的下落。\n图五\n周扬心中一阵失望。\n起身，沉着脸离开包厢。\n图六\n吴铭：老大脸色很糟。\n黑镜：离哥失踪两年，到现在都没消息。再这么下去，老大真要疯了。",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpuanbld_9c88dd",
+            "title": "暗杀",
+            "images": [
+                {
+                    "alias": "暗杀 (1)",
+                    "title": "暗杀 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (2)",
+                    "title": "暗杀 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (3)",
+                    "title": "暗杀 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (4)",
+                    "title": "暗杀 (4)",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (5)",
+                    "title": "暗杀 (5)",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (6)",
+                    "title": "暗杀 (6)",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (7)",
+                    "title": "暗杀 (7)",
+                    "index": 7,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (8)",
+                    "title": "暗杀 (8)",
+                    "index": 8,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (9)",
+                    "title": "暗杀 (9)",
+                    "index": 9,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (10)",
+                    "title": "暗杀 (10)",
+                    "index": 10,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "暗杀 (11)",
+                    "title": "暗杀 (11)",
+                    "index": 11,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "逼供",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\n周扬脸色难看地走出包厢。\n图二\n一个男人低着头与周扬擦肩而过。\n图三\n男人忽然掏枪转身。\n图四\n周扬反应迅速，极快的掏枪对准对方。\n图五\n帽檐遮挡了男人的脸。\n图六\n当他抬头瞬间，露出真容。\n图七\n看着离蔚的脸，周扬怔住。\n图八\n男人毫不犹豫扣动扳机。\n子弹从周扬左肩擦过（轻伤）\n图九\n手下赶来，从身后把离蔚打晕。离蔚倒在地上。\n受伤的周扬喝止手下，扑过去把被打晕的离蔚抱在怀里。\n图十\n手下这才看清离蔚的脸，震惊。\n“离哥？”\n“怎么会是离哥？”\n图十一\n周扬：离蔚！离蔚！叫救护车！\n",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpud3wyx_447490",
+            "title": "醒来",
+            "images": [
+                {
+                    "alias": "醒来 (1)",
+                    "title": "醒来 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (2)",
+                    "title": "醒来 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (3)",
+                    "title": "醒来 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (4)",
+                    "title": "醒来 (4)",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (5)",
+                    "title": "醒来 (5)",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (6)",
+                    "title": "醒来 (6)",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (7)",
+                    "title": "醒来 (7)",
+                    "index": 7,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (8)",
+                    "title": "醒来 (8)",
+                    "index": 8,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (9)",
+                    "title": "醒来 (9)",
+                    "index": 9,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (10)",
+                    "title": "醒来 (10)",
+                    "index": 10,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (11)",
+                    "title": "醒来 (11)",
+                    "index": 11,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (12)",
+                    "title": "醒来 (12)",
+                    "index": 12,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (13)",
+                    "title": "醒来 (13)",
+                    "index": 13,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (14)",
+                    "title": "醒来 (14)",
+                    "index": 14,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (15)",
+                    "title": "醒来 (15)",
+                    "index": 15,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "醒来 (16)",
+                    "title": "醒来 (16)",
+                    "index": 16,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "宁静到绮丽",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 2,
+            "narrationText": "图一\n医生：基本检查结果出来了。\n医生：病人没什么大碍，应该很快会醒来。\n周扬：辛苦了，我想和他单独待一会。\n医生：周先生请便。\n图二\n周扬：两年了，你跑哪去了？\n周扬：在你身上……\n周扬：到底发生了什么？\n图三\n离蔚皱眉，即将苏醒。\n周扬收起温柔表情，露出一丝警惕，拿出手铐，把离蔚的手拷起来。\n图四\n离蔚苏醒，睁开眼，对上周扬的视线。\n离蔚心中一惊。\n图五\n离蔚扭头，发现自己被拷住。\n图六\n离蔚：周扬，有种你就放开我。\n图七\n周扬：放开你？好让你再杀我一次？\n图八\n离蔚：杀一次怎么够，害我失忆，又害我受伤，新仇旧恨，我恨不得杀你千百次。\n图九\n周扬：你在说什么？你失忆了？\n图十\n离蔚：少在那装无辜。就算我失忆了，也有人告诉我你对我干过的那些好事。\n图十一\n周扬：有人？谁？\n图十二\n离蔚：哼，我不会出卖自己的老大。\n图十三\n周扬：老大？现在敢和我周扬对着干的只有洛辛。\n周扬：你嘴里的老大，不会是指他吧？\n图十四\n离蔚掩饰不安，保持沉默。\n却被周扬一眼看穿。\n周扬：原来真是洛辛。这两年对他还是太仁慈了，早就该弄死他。\n图十五\n周扬转身离开。\n图十六\n离蔚：周扬，你想对我老大怎样？\n离蔚：你站住！把我手铐解了！\n离蔚：周扬你个混蛋！给我回来！\n\n\n\n",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpugwhaa_07f263",
+            "title": "召集会议",
+            "images": [
+                {
+                    "alias": "召集会议 (1)",
+                    "title": "召集会议 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "召集会议 (2)",
+                    "title": "召集会议 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "召集会议 (3)",
+                    "title": "召集会议 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "召集会议 (4)",
+                    "title": "召集会议 (4)",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "召集会议 (5)",
+                    "title": "召集会议 (5)",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "召集会议 (6)",
+                    "title": "召集会议 (6)",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "召集会议 (7)",
+                    "title": "召集会议 (7)",
+                    "index": 7,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "召集会议 (8)",
+                    "title": "召集会议 (8)",
+                    "index": 8,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "刺激对峙",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\n黑镜：老大，离哥他……\n图二\n周扬打断黑镜的话。\n周扬：袖扣不会无缘无故在夜总会出现，有人故意放在那里。\n周扬：他们知道我一定会亲自过去，趁机安排刺杀。\n周扬：把洛辛约出来，我要和他当面谈谈。\n图三\n黑镜：现在清辉会和黑莲帮剑拔弩张，老大约洛辛，他未必有胆子露面。\n图四\n周扬：请龙脊会出面。\n图五\n黑镜：龙脊会？老大的意思是？\n图六\n周扬：为了北岸码头的经营权，洛辛一定会出现。\n图七\n黑镜：明白了，老大。\n图八\n周扬：另外，\n周扬：还有一件事，你要办得利落点……\n\n",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpuj7yy3_12e993",
+            "title": "谈判",
+            "images": [
+                {
+                    "alias": "谈判 (1)",
+                    "title": "谈判 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (2)",
+                    "title": "谈判 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (3)",
+                    "title": "谈判 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (4)",
+                    "title": "谈判 (4)",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (5)",
+                    "title": "谈判 (5)",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (6)",
+                    "title": "谈判 (6)",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (7)",
+                    "title": "谈判 (7)",
+                    "index": 7,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (8)",
+                    "title": "谈判 (8)",
+                    "index": 8,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (9)",
+                    "title": "谈判 (9)",
+                    "index": 9,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (10)",
+                    "title": "谈判 (10)",
+                    "index": 10,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (11)",
+                    "title": "谈判 (11)",
+                    "index": 11,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (12)",
+                    "title": "谈判 (12)",
+                    "index": 12,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (13)",
+                    "title": "谈判 (13)",
+                    "index": 13,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (14)",
+                    "title": "谈判 (14)",
+                    "index": 14,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (15)",
+                    "title": "谈判 (15)",
+                    "index": 15,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (16)",
+                    "title": "谈判 (16)",
+                    "index": 16,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (17)",
+                    "title": "谈判 (17)",
+                    "index": 17,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (18)",
+                    "title": "谈判 (18)",
+                    "index": 18,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (19)",
+                    "title": "谈判 (19)",
+                    "index": 19,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (20)",
+                    "title": "谈判 (20)",
+                    "index": 20,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (21)",
+                    "title": "谈判 (21)",
+                    "index": 21,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (22)",
+                    "title": "谈判 (22)",
+                    "index": 22,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (23)",
+                    "title": "谈判 (23)",
+                    "index": 23,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (24)",
+                    "title": "谈判 (24)",
+                    "index": 24,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (25)",
+                    "title": "谈判 (25)",
+                    "index": 25,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (26)",
+                    "title": "谈判 (26)",
+                    "index": 26,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (27)",
+                    "title": "谈判 (27)",
+                    "index": 27,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (28)",
+                    "title": "谈判 (28)",
+                    "index": 28,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "谈判 (29)",
+                    "title": "谈判 (29)",
+                    "index": 29,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "谈判紧张",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\n李代表：二位，二位！就算不给我李某人面子，也得给龙脊会的龙哥一个面子吧。\n当着中间人的面，双方稍有收敛。\n图二\n洛辛：若水，把枪放下，周老大才死里逃生，你别吓他。\n图三\n周扬：盼我死的人有很多，可惜都活不过我。\n图四\n谈判开始\n按行规点香\n图五\n李代表：老规矩，香没燃尽之前，无论谈没谈妥，都得和和气气站着出去。\n图六\n李代表：二位同意吗？\n图七\n李代表：呵，两位不反对，我就当各位同意了。\n图八\n李代表：今日我是受龙脊会的委托而来。\n图九\n李代表：龙脊会的话事人龙哥想把他们帮派管辖的北岸码头的经营权交出去。\n李代表：和经营者利益分成。\n图十\n李代表：二位带领的清辉会和黑莲帮实力出众。\n图十一\n李代表：都是经营码头最有力的合作者。\n图十二\n李代表：花落谁家，各凭本事。\n图十三\n李代表：就看两位谁的诚意更大。\n图十四\n周扬：你真的可以全权代表龙脊会？\n李代表：这是自然。\n周扬：龙哥是老江湖，做事讲究。\n周扬：码头一不碰政府执法官员，二不碰毒品，规矩不能坏。\n图十五\n周扬：洛老大，你说呢？\n图十六\n洛辛：我说，这分成的方案绝对没问题。\n洛辛：其实以我对龙哥的尊敬，只要他开口，八二分我都能答应。\n图十七\n周扬：连八二分都说出来了，真当自己吃定了北岸码头？\n周扬：怕只怕你管不住自己，要犯龙哥的规矩。\n周扬：有些事是底线，那么自信自己的收益，把自己钓进去就是赔本。\n图十八\t\n洛辛：能赚多少，那是本事。拿了赔本，那是笑话。\n图十九\n洛辛：周老大当然管得住自己，只是管不住自己的情人。对了，你肩膀还好吧？\n洛辛：被情人打成这样，看来是你床上功夫不行，没满足人家呀。\n图二十\n黑镜：你闭嘴。\n图二十一\n若水：把手收回去。\n图二十二\n香还在燃，昭示着不容违背的规矩。\n图二十三\n周扬：洛老大对我的私生活，好像特别关心？\n图二十四\n洛辛：这个当然。\n洛辛：自打黑莲帮丢了红棍，周老大天天挑事，大家谁都过得不安生。\n洛辛：现在你心爱的红棍回来了，我真心的期盼二位久别重逢，相亲相爱。\n图二十五\n洛辛：最好爱得……死去活来，呵呵！\n图二十六\n李代表：周老大，冷静冷静。\n李代表：你身上有伤，还是不要太劳神，码头的事呢，也不是一天能谈妥的。\n图二十七\n李代表：要不这样，暂时把码头一分为二。\n李代表：让清辉会和黑莲帮各做一边，一个月时间为限，\n李代表：还是那句话，花落谁家，各凭本事，如何？\n图二十八\n洛辛：我赞成。正好让龙哥看看我们清辉会的本事。\n李代表：周老大，你呢？\n图二十九\n周扬：行。\n周扬：那就各凭本事。\n",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpuk5md6_04c1ca",
+            "title": "夜总会走廊",
+            "images": [
+                {
+                    "alias": "夜总会走廊 (1)",
+                    "title": "夜总会走廊 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "夜总会走廊 (2)",
+                    "title": "夜总会走廊 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "夜总会走廊 (3)",
+                    "title": "夜总会走廊 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "紧张气氛",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\n手下：老大。\n图二\n周扬：事情办了吗？\n手下：办好了。洛辛来见老大，带走了老巢大部分人手。\n手下：我们很顺利就把黑莲会二把手给绑了。\n图三\n周扬：很好。\n周扬：人关在哪？带我去。\n",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpukezj9_0ae652",
+            "title": "逼供",
+            "images": [
+                {
+                    "alias": "逼供 (1)",
+                    "title": "逼供 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (2)",
+                    "title": "逼供 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (3)",
+                    "title": "逼供 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (4)",
+                    "title": "逼供 (4)",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (5)",
+                    "title": "逼供 (5)",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (6)",
+                    "title": "逼供 (6)",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (7)",
+                    "title": "逼供 (7)",
+                    "index": 7,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (8)",
+                    "title": "逼供 (8)",
+                    "index": 8,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (9)",
+                    "title": "逼供 (9)",
+                    "index": 9,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (10)",
+                    "title": "逼供 (10)",
+                    "index": 10,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (11)",
+                    "title": "逼供 (11)",
+                    "index": 11,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "逼供 (12)",
+                    "title": "逼供 (12)",
+                    "index": 12,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "逼供",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\n黑莲会二把手，被周扬手下看管着。\n图二\n手下A：老大来了。\n手下B：老大，这家伙能被洛辛看重，骨头应该很硬，我们打算这次给你审得手辣点。\n周扬：你们出去。\n手下：老大？\n周扬：不用你们，我自己来。\n周扬：出去。\n手下：是，老大。\n图三\n周扬：离蔚失踪两年，是你们红莲会干的。\n图四\n俘虏：我不知道，我什么都不知道。\n图五\n周扬：没关系，我很有耐心。\n周扬：我亲自陪你玩。\n图六\n周扬：我只要知道一件事。\n周扬：洛辛对离蔚做了什么？\n周扬：只要你说实话，我会给你一个痛快。\n图七\n房间里传来的惨叫，令人心里发怵。\n图八\n房门终于打开。周扬从里面走了出来。\n图九\n黑镜：老大，他招了？\n图十\n周扬沉默一下。\n图十一\n然后慢条斯理擦拭手中沾上的鲜血\n周扬：招了。\n周扬：两年前离蔚潜入洛辛的地盘，被洛辛抓住，秘密囚禁了两年。离蔚他……\n周扬：……被洛辛洗了脑。\n黑镜：洗脑？\n黑镜：所以离哥把老大给忘了？还想杀老大？\n吴铭：洛辛这狗东西！我们一定要和红莲会算这笔账！\n图十二\n周扬：别说了。\n周扬：离蔚还在医院，先回去吧。\n\n",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpumd2pq_937075",
+            "title": "病房外回忆",
+            "images": [
+                {
+                    "alias": "病房外回忆 (1)",
+                    "title": "病房外回忆 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (2)",
+                    "title": "病房外回忆 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (3)",
+                    "title": "病房外回忆 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (4)",
+                    "title": "病房外回忆 (4)",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (5)",
+                    "title": "病房外回忆 (5)",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (6)",
+                    "title": "病房外回忆 (6)",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (7)",
+                    "title": "病房外回忆 (7)",
+                    "index": 7,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (8)",
+                    "title": "病房外回忆 (8)",
+                    "index": 8,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (9)",
+                    "title": "病房外回忆 (9)",
+                    "index": 9,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (10)",
+                    "title": "病房外回忆 (10)",
+                    "index": 10,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (11)",
+                    "title": "病房外回忆 (11)",
+                    "index": 11,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (12)",
+                    "title": "病房外回忆 (12)",
+                    "index": 12,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (13)",
+                    "title": "病房外回忆 (13)",
+                    "index": 13,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (14)",
+                    "title": "病房外回忆 (14)",
+                    "index": 14,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (15)",
+                    "title": "病房外回忆 (15)",
+                    "index": 15,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (16)",
+                    "title": "病房外回忆 (16)",
+                    "index": 16,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (17)",
+                    "title": "病房外回忆 (17)",
+                    "index": 17,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (18)",
+                    "title": "病房外回忆 (18)",
+                    "index": 18,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房外回忆 (19)",
+                    "title": "病房外回忆 (19)",
+                    "index": 19,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "回忆",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\n周扬走向病房。\n图二\n要推开房门，却停住。\n图三\n他伸手进口袋\n图四\n掏出袖扣\n图五\n回忆涌上心头\n图六\n离蔚：周老大，好了没有？\n离蔚：出个门怎么像女人一样麻烦，再不来我自己先走啦。\n图七\n周扬：来了。\n图八\n离蔚：哇，还戴了袖扣啊。\n离蔚：帅！\n图九\n周扬：这个给你。\n图十\n离蔚：谢了，不要。\n周扬：呵，我送的，你敢不要。\n离蔚：老大，我可是红棍。戴着这种假斯文的东西，怎么和人动手啊。\n图十一\n周扬：你的意思……\n周扬；我是假斯文？\n图十二\n离蔚：不。\n离蔚：你是真禽兽。\n图十三\n周扬：袖扣收好。\n周扬：我送你的，不许弄丢。\n图十四\n离蔚：知道啦。回头改个项链挂脖子上。\n离蔚：每次接吻就知道唠叨我，烦不烦。\n图十五\n离蔚：你专心点。\n周扬：好，专心……\n图十六\n周扬回忆着和离蔚的点点滴滴\n图十七\n他知道自己虽然冷静地站在这里，\n但其实已经疯了。\n图十八\n否则，他不会产生这样疯狂的想法\n图十九\n他不顾一切地推开房间\n走了进去",
+            "copyBody": "",
+            "narrationLinesPerPage": 1,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mpvnfpra_e7fab7",
+            "title": "病房里给袖扣",
+            "images": [
+                {
+                    "alias": "病房里给袖扣 (1)",
+                    "title": "病房里给袖扣 (1)",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (2)",
+                    "title": "病房里给袖扣 (2)",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (3)",
+                    "title": "病房里给袖扣 (3)",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (4)",
+                    "title": "病房里给袖扣 (4)",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (5)",
+                    "title": "病房里给袖扣 (5)",
+                    "index": 5,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (6)",
+                    "title": "病房里给袖扣 (6)",
+                    "index": 6,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "5月31日 (3)",
+                    "title": "5月31日 (3)",
+                    "index": 7,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (7)",
+                    "title": "病房里给袖扣 (7)",
+                    "index": 8,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (8)",
+                    "title": "病房里给袖扣 (8)",
+                    "index": 9,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (9)",
+                    "title": "病房里给袖扣 (9)",
+                    "index": 10,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "病房里给袖扣 (10)",
+                    "title": "病房里给袖扣 (10)",
+                    "index": 11,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "2026-05-29-15h10m17s_seed298775034_杰出的优质视频，一只手搂着红衣人",
+                    "title": "2026-05-29-15h10m17s_seed298775034_杰出的优质视频，一只手搂着红衣人",
+                    "index": 12,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "",
+            "copyBody": "",
+            "narrationLinesPerPage": 6,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        },
+        {
+            "id": "grmod_mqlpg36u_1fba3b",
+            "title": "呵呵",
+            "images": [
+                {
+                    "alias": "呵呵3 - 副本",
+                    "title": "呵呵3 - 副本",
+                    "index": 1,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "呵呵1",
+                    "title": "呵呵1",
+                    "index": 2,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "呵呵2",
+                    "title": "呵呵2",
+                    "index": 3,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                },
+                {
+                    "alias": "呵呵3",
+                    "title": "呵呵3",
+                    "index": 4,
+                    "mediaType": "",
+                    "hasNativeAudio": false
+                }
+            ],
+            "cgMusicAlias": "悲伤59",
+            "videoMusicAlias": "",
+            "musicFadeMs": 1000,
+            "transition": "fade",
+            "transitionSeconds": 1,
+            "narrationText": "图一\nIPC战略投资部声名最盛的总监，匹诺康尼盛大告别的缔造者——\n砂金正躺在这里。\n从匹诺康尼的深梦中醒来后，\n梦境中的剧烈消耗让他的精神迅速衰竭，进入昏迷状态。\n他被战投部转移到中央医院，由宇宙顶尖的医疗仪器监管生命。\n但一切治疗情况都被严格保密。\n砂金作为公司高层和石心十人之一，\n他的生死必然会引发巨大的波澜。\n图二\n而那位身穿白衣、似乎是医生的男人，\n已经在他床边站了很久。\n维里塔斯·拉帝奥教授，通称“真理医生”，博识学会最有名的学者之一。\n在匹诺康尼的事件中，他作为搭档协助砂金行动。\n世人常常揣测，这位以犀利和理性著称的学者\n究竟为什么会和那位疯狂的赌徒成为搭档？\n图三\n英俊的男人始终没有发出任何声音。\n他赤红的眼睛，像是一湾在夜色下流淌的火焰。\n图四\n——蕴含着无尽的感情、却无法公之于世的，\n苦涩的火焰。\n病房门被轻轻推开，\n翡翠和托帕——砂金的两位同事走了进来。\n在砂金入院治疗以来，\n是这两位强大的女士帮助砂金处理了大量紧急事务。\n托帕（叹气）：\n教授，辛苦你一直守在这里。照顾这家伙一定很累吧？\n翡翠（皱眉担心）：\n你说他醒过来了，但发生了异常情况？\n真理（冷静）：\n好消息是，他的身体没有大碍。坏消息是，他现在必须用镇定剂才能控制。\n幸亏你们上午不在，错过了那个地狱般的场面。\n\n托帕（吃惊）：\n……他身上增加了束缚带，难道是有暴力行为？\n真理（移开视线）：\n他今天险些就用输液管勒死了两个人。\n翡翠（思考）：\n这个状态听起来……像是我初次见他时，那个戴着镣铐的他。\n\n\n\n\n\n\n\n\n\n",
+            "copyBody": "",
+            "narrationLinesPerPage": 2,
+            "narrationFontPx": 26,
+            "narrationColor": "#e8e6e3",
+            "narrationTypewriterMsPerChar": 0
+        }
+    ],
+    "randomDisplayModules": [],
+    "jumpSlots": [],
+    "scenes": [
+        {
+            "id": "scene_1780284783362",
+            "name": "序章",
+            "characterName": "",
+            "characterRef": "",
+            "expression": "",
+            "character": {
+                "url": "",
+                "layout": {
+                    "panX": 0,
+                    "panY": 0,
+                    "zoom": 1
+                }
+            },
+            "background": {
+                "url": "医院",
+                "fitPanX": 0,
+                "fitPanY": 0,
+                "fitZoom": 1
+            },
+            "storyGraphic": {},
+            "effects": {
+                "cgEntrance": "",
+                "overlays": [],
+                "combo": "",
+                "dramatic": ""
+            },
+            "text": "...",
+            "options": [],
+            "appearedValue": 0,
+            "steps": [
+                {
+                    "id": "step_1780284794180_405b9c",
+                    "type": "narration",
+                    "effects": [],
+                    "text": "让我们开始吧。",
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "appearedValue": 0
+                },
+                {
+                    "id": "step_1782271913215_95c24e",
+                    "type": "cg",
+                    "effects": [],
+                    "cg": {
+                        "url": "呵呵3",
+                        "mediaType": "image"
+                    },
+                    "hideDialogue": true,
+                    "cgDialogueMode": "auto",
+                    "text": "整洁冰冷的病房里，只有一张单人病床和数个监测仪器。\n\n\n砂金穿着白色的病号服，眼睛紧闭，被束缚带紧紧固定在病床上，\n身上还有一些输液和连接监测仪器的管线。\n\n真理站在病床后面，低头安静地看着砂金。\n",
+                    "hideCharacter": true,
+                    "cgLoop": true,
+                    "cgStopAtStepId": "",
+                    "cgMusicStopAtStepId": "",
+                    "cgMusicAlias": "",
+                    "cgMusicLoop": true,
+                    "cgFadeInMs": 0,
+                    "cgFadeOutMs": 0,
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "stepFx": {
+                        "v": 2,
+                        "family": "rom_entry",
+                        "target": "通用",
+                        "effect": "淡入",
+                        "entrySec": 5,
+                        "exitSec": 1,
+                        "romEntryEffect": "淡入",
+                        "romAmbientEffect": "",
+                        "romExitEffect": ""
+                    },
+                    "appearedValue": 0
+                },
+                {
+                    "id": "step_1782272064183_d7f20d",
+                    "type": "cg",
+                    "effects": [],
+                    "cg": {
+                        "url": "呵呵3",
+                        "mediaType": "image"
+                    },
+                    "hideDialogue": true,
+                    "cgDialogueMode": "auto",
+                    "text": "滴——滴——\n\n\n\n",
+                    "hideCharacter": true,
+                    "cgLoop": true,
+                    "cgStopAtStepId": "",
+                    "cgMusicStopAtStepId": "",
+                    "cgMusicAlias": "",
+                    "cgMusicLoop": true,
+                    "cgFadeInMs": 0,
+                    "cgFadeOutMs": 0,
+                    "dramaticEffect": "",
+                    "soundAlias": "universfield-medical-monitor-153306",
+                    "appearedValue": 0,
+                    "stepFx": {
+                        "v": 2,
+                        "family": "rom_combo",
+                        "target": "CG",
+                        "effect": "幻梦浮生",
+                        "entrySec": 3,
+                        "exitSec": 3,
+                        "romEntryEffect": "",
+                        "romAmbientEffect": "",
+                        "romExitEffect": ""
+                    }
+                },
+                {
+                    "id": "step_1782274534993_714897",
+                    "type": "cg",
+                    "effects": [],
+                    "cg": {
+                        "url": "3",
+                        "fileName": "3.webp",
+                        "mediaType": "image"
+                    },
+                    "hideDialogue": true,
+                    "cgDialogueMode": "auto",
+                    "text": "金发病人被牢牢束缚在病床上。\n他艳丽的脸庞毫无生气，如同寒冰一般沉睡着。\n\n床头的名牌显示着他的身份。\n\n\nIPC战略投资部声名最盛的总监，匹诺康尼盛大告别的缔造者——\n砂金正躺在这里。\n\n从匹诺康尼的深梦中醒来后，\n梦境中的剧烈消耗让他的精神迅速衰竭，进入昏迷状态。\n\n他被战投部转移到中央医院，由宇宙顶尖的医疗仪器监管生命。\n但一切治疗情况都被严格保密。\n\n砂金作为公司高层和石心十人之一，\n他的生死必然会引发巨大的波澜。\n",
+                    "hideCharacter": true,
+                    "cgLoop": true,
+                    "cgStopAtStepId": "",
+                    "cgMusicStopAtStepId": "",
+                    "cgMusicAlias": "",
+                    "cgMusicLoop": true,
+                    "cgFadeInMs": 0,
+                    "cgFadeOutMs": 0,
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "stepFx": {
+                        "v": 2,
+                        "family": "rom_combo",
+                        "target": "通用",
+                        "effect": "",
+                        "entrySec": 1,
+                        "exitSec": 1,
+                        "romEntryEffect": "",
+                        "romAmbientEffect": "",
+                        "romExitEffect": ""
+                    },
+                    "appearedValue": 0,
+                    "labelSuffix": ""
+                },
+                {
+                    "id": "step_1782276024798_d46d14",
+                    "type": "cg",
+                    "effects": [],
+                    "cg": {
+                        "url": "1",
+                        "mediaType": "image"
+                    },
+                    "hideDialogue": true,
+                    "cgDialogueMode": "auto",
+                    "text": "而那位身穿白衣、似乎是医生的男人，\n已经在他床边站了很久。\n\n维里塔斯·拉帝奥教授，通称“真理医生”，博识学会最有名的学者之一。\n在匹诺康尼的事件中，他作为搭档协助砂金行动。\n\n世人常常揣测，这位以犀利和理性著称的学者\n究竟为什么会和那位疯狂的赌徒成为搭档？\n\n英俊的男人始终没有发出任何声音。\n他赤红的眼睛，像是一湾在夜色下流淌的火焰。\n\n——蕴含着无尽的感情、却无法公之于世的，\n苦涩的火焰。\n",
+                    "hideCharacter": true,
+                    "cgLoop": false,
+                    "cgStopAtStepId": "step_1782280206931_adc8d9",
+                    "cgMusicStopAtStepId": "",
+                    "cgMusicAlias": "",
+                    "cgMusicLoop": false,
+                    "cgFadeInMs": 0,
+                    "cgFadeOutMs": 0,
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "stepFx": {
+                        "v": 2,
+                        "family": "rom_exit",
+                        "target": "通用",
+                        "effect": "淡出",
+                        "entrySec": 3,
+                        "exitSec": 2,
+                        "romEntryEffect": "淡入",
+                        "romAmbientEffect": "",
+                        "romExitEffect": "淡出"
+                    },
+                    "appearedValue": 0
+                },
+                {
+                    "id": "step_1782280206931_adc8d9",
+                    "type": "narration",
+                    "effects": [],
+                    "text": "（喀拉——）",
+                    "dramaticEffect": "",
+                    "soundAlias": "soundreality-door-opening-2-455061",
+                    "appearedValue": 0,
+                    "stepFx": {
+                        "v": 2,
+                        "family": "",
+                        "target": "通用",
+                        "effect": "",
+                        "entrySec": 3,
+                        "exitSec": 3,
+                        "romEntryEffect": "",
+                        "romAmbientEffect": "",
+                        "romExitEffect": ""
+                    }
+                },
+                {
+                    "id": "step_1782276525688_cc18fd",
+                    "type": "narration",
+                    "effects": [],
+                    "text": "病房门被轻轻推开，\n翡翠和托帕——砂金的两位同事走了进来。\n",
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "appearedValue": 0
+                },
+                {
+                    "id": "step_1782277366914_2b993f",
+                    "type": "topicPool",
+                    "effects": [],
+                    "topicPoolMode": "random",
+                    "topicPoolModuleId": "tpmod_mqrlsmjp_53393a",
+                    "topicPoolItemId": "",
+                    "topicPoolItemSearchText": "",
+                    "topicPoolPickMode": "randomUnseen",
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "appearedValue": 0,
+                    "labelSuffix": "序章对话"
+                },
+                {
+                    "id": "step_1782282478573_a160e2",
+                    "type": "cg",
+                    "effects": [],
+                    "cg": {
+                        "url": "1",
+                        "fileName": "1.webp",
+                        "mediaType": "image"
+                    },
+                    "hideDialogue": true,
+                    "cgDialogueMode": "auto",
+                    "text": "",
+                    "hideCharacter": true,
+                    "cgLoop": true,
+                    "cgStopAtStepId": "step_1782284007599_a9897f",
+                    "cgMusicStopAtStepId": "",
+                    "cgMusicAlias": "",
+                    "cgMusicLoop": true,
+                    "cgFadeInMs": 0,
+                    "cgFadeOutMs": 0,
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "appearedValue": 0,
+                    "stepFx": {
+                        "v": 2,
+                        "family": "rom_entry",
+                        "target": "通用",
+                        "effect": "淡入",
+                        "entrySec": 3,
+                        "exitSec": 3,
+                        "romEntryEffect": "淡入",
+                        "romAmbientEffect": "",
+                        "romExitEffect": ""
+                    }
+                },
+                {
+                    "id": "step_1782283825392_791edd",
+                    "type": "topicPool",
+                    "effects": [],
+                    "topicPoolMode": "random",
+                    "topicPoolModuleId": "tpmod_mqrps1kw_9cc13c",
+                    "topicPoolItemId": "",
+                    "topicPoolItemSearchText": "",
+                    "topicPoolPickMode": "randomUnseen",
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "appearedValue": 0
+                },
+                {
+                    "id": "step_1782284007599_a9897f",
+                    "type": "narration",
+                    "effects": [],
+                    "text": "真理想着，如果砂金能看到他的样子，一定会轻飘飘地笑着对他说：\n“教授，原来你也会有这样走投无路的表情啊！”\n\n可是现在的砂金始终沉睡着，\n什么也没有听到。\n\n任由那些话语飘散在冷白色的空气中。\n\n\n\n\n",
+                    "dramaticEffect": "",
+                    "soundAlias": "",
+                    "appearedValue": 0
+                }
+            ],
+            "stepFragments": [],
+            "music": {
+                "url": "悲伤59",
+                "loop": true
+            },
+            "autoAnnounce": {
+                "enabled": false,
+                "published": false,
+                "condition": null,
+                "message": ""
+            },
+            "returnInPlace": false
+        },
+        {
+            "id": "scene_1782416847446",
+            "name": "探索功能及转跳功能测试",
+            "characterName": "",
+            "characterRef": "",
+            "expression": "",
+            "character": {
+                "url": "",
+                "layout": {
+                    "panX": 0,
+                    "panY": 0,
+                    "zoom": 1
+                }
+            },
+            "background": {
+                "url": "",
+                "fitPanX": 0,
+                "fitPanY": 0,
+                "fitZoom": 1
+            },
+            "storyGraphic": {},
+            "effects": {
+                "cgEntrance": "",
+                "overlays": [],
+                "combo": "",
+                "dramatic": ""
+            },
+            "text": "...",
+            "options": [],
+            "appearedValue": 0,
+            "steps": [
+                {
+                    "id": "step_1782416847446_dlg",
+                    "type": "dialogue",
+                    "effects": [],
+                    "speakerRef": "",
+                    "expression": "",
+                    "charMode": "big",
+                    "mirror": false,
+                    "text": "",
+                    "appearedValue": 0,
+                    "requireSpeakerExist": false
+                }
+            ],
+            "stepFragments": [],
+            "returnInPlace": false,
+            "music": {
+                "url": "",
+                "loop": true
+            },
+            "autoAnnounce": {
+                "enabled": false,
+                "published": false,
+                "condition": null,
+                "message": ""
+            }
+        }
+    ],
+    "characterTypes": [
+        {
+            "id": "type_1",
+            "name": "类型1"
+        }
+    ],
+    "playSave": {
+        "enabled": false,
+        "autoSaveSceneId": "",
+        "autoSaveLabelSuffix": "",
+        "projectKey": "bu_start"
+    },
+    "itemLibrary": [
+        {
+            "itemId": "item_mqmn5c20_0eb1",
+            "name": "戒指",
+            "iconAlias": "戒指",
+            "description": "也不知道谁丢在病房的戒指",
+            "type": "normal",
+            "stackable": false
+        },
+        {
+            "itemId": "item_mqmn6neb_1",
+            "name": "手表",
+            "iconAlias": "手表",
+            "description": "漂亮的手表",
+            "type": "normal",
+            "stackable": false
+        },
+        {
+            "itemId": "item_mqmn6vau_2",
+            "name": "月桂叶头饰",
+            "iconAlias": "月桂叶头饰",
+            "description": "很好看的月桂叶头饰",
+            "type": "normal",
+            "stackable": false
+        },
+        {
+            "itemId": "item_mqmn79uw_3",
+            "name": "筹码",
+            "iconAlias": "筹码",
+            "description": "似乎来自熊猫赌场",
+            "type": "normal",
+            "stackable": false
+        },
+        {
+            "itemId": "item_mqmn7rxg_4",
+            "name": "钥匙",
+            "iconAlias": "钥匙",
+            "description": "不知道可以打开哪里的钥匙",
+            "type": "normal",
+            "stackable": false
+        }
+    ],
+    "hiddenMapModules": [
+        {
+            "mapId": "map_mqmne7cw_f337",
+            "name": "病房",
+            "imageAlias": "医院",
+            "foundSoundAlias": "加分",
+            "collectMode": "choice",
+            "hiddenItemCount": 5,
+            "allowedFindCount": 3,
+            "finishMode": "auto",
+            "spots": [
+                {
+                    "spotId": "spot_mqmo96wy_0",
+                    "label": "藏物点1",
+                    "shape": "circle",
+                    "x": 14.09,
+                    "y": 75.97,
+                    "radius": 2,
+                    "width": 12,
+                    "height": 12,
+                    "itemId": "item_mqmn5c20_0eb1",
+                    "foundText": "旁白：找到了戒指\n真理：我不想要戒指。\n翡翠：我喜欢这个颜色。\n托帕：我帮你收着吧。\n旁白：得到了戒指",
+                    "acceptText": "翡翠：其实我早就想收下了。\n真理：挺好的。",
+                    "rejectText": "托帕：真的不要吗？好可惜。",
+                    "effect": "glow"
+                },
+                {
+                    "spotId": "spot_mqmo9bdy_1",
+                    "label": "藏物点2",
+                    "shape": "circle",
+                    "x": 92.15,
+                    "y": 75.26,
+                    "radius": 2,
+                    "width": 12,
+                    "height": 12,
+                    "itemId": "item_mqmn6neb_1",
+                    "foundText": "旁白：找到了手表\n真理：不知谁丢在这的。\n翡翠：我喜欢。\n托帕：我帮你收着吧。\n旁白：得到了手表",
+                    "acceptText": "翡翠：其实我早就想收下了。\n真理：挺好的。",
+                    "rejectText": "托帕：真的不要吗？好可惜。",
+                    "effect": "glow"
+                },
+                {
+                    "spotId": "spot_mqmo9f9y_2",
+                    "label": "藏物点3",
+                    "shape": "circle",
+                    "x": 53.88,
+                    "y": 47.37,
+                    "radius": 2,
+                    "width": 12,
+                    "height": 12,
+                    "itemId": "item_mqmn6vau_2",
+                    "foundText": "旁白：找到了月桂花头饰\n真理：不知谁丢在这的。\n翡翠：我喜欢。\n托帕：我帮你收着吧。\n旁白：得到了月桂花头饰",
+                    "acceptText": "翡翠：其实我早就想收下了。\n真理：挺好的。",
+                    "rejectText": "托帕：真的不要吗？好可惜。",
+                    "effect": "glow"
+                },
+                {
+                    "spotId": "spot_mqmo9gye_3",
+                    "label": "藏物点4",
+                    "shape": "circle",
+                    "x": 91.99,
+                    "y": 41.82,
+                    "radius": 2,
+                    "width": 12,
+                    "height": 12,
+                    "itemId": "item_mqmn79uw_3",
+                    "foundText": "旁白：找到了筹码\n真理：不知谁丢在这的。\n翡翠：我喜欢。\n托帕：我帮你收着吧。\n旁白：得到了筹码",
+                    "acceptText": "翡翠：其实我早就想收下了。\n真理：挺好的。",
+                    "rejectText": "托帕：真的不要吗？好可惜。",
+                    "effect": "glow"
+                },
+                {
+                    "spotId": "spot_mqmo9kty_4",
+                    "label": "藏物点5",
+                    "shape": "circle",
+                    "x": 39.87,
+                    "y": 30.72,
+                    "radius": 2,
+                    "width": 12,
+                    "height": 12,
+                    "itemId": "item_mqmn7rxg_4",
+                    "foundText": "旁白：找到了钥匙\n真理：不知谁丢在这的。\n翡翠：我喜欢。\n托帕：我帮你收着吧。\n旁白：得到了钥匙",
+                    "acceptText": "翡翠：其实我早就想收下了。\n真理：挺好的。",
+                    "rejectText": "托帕：真的不要吗？好可惜。",
+                    "effect": "glow"
+                }
+            ]
+        }
+    ],
+    "customUi": {
+        "freeButtons": [
+            {
+                "id": "free_btn_mqu1abme_1792",
+                "name": "系统",
+                "enabled": true,
+                "text": "系统",
+                "scope": "game",
+                "xPct": 84.10360546905852,
+                "yPct": 66.78187731632596,
+                "wPct": 7.409863273536967,
+                "hPct": 3.4213749017316255,
+                "fontSize": 12,
+                "fontFamily": "",
+                "color": "#ffffff",
+                "background": "#333333",
+                "borderColor": "#ffffff",
+                "opacity": 0.9,
+                "action": {
+                    "type": "jump",
+                    "sceneId": "",
+                    "labelSuffix": ""
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryEngine - 运行模式</title>
+    <link rel="stylesheet" href="style.css?v=20260625_free_ui_font_options">
+</head>
+<body style="margin: 0; background-color: #1a1a1a; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden;">
+    
+    <!-- 启动加载界面 (方案B特有) -->
+    <div id="boot-screen">
+        <div id="boot-window">
+            <h2>📖 StoryEngine 启动</h2>
+            <p id="boot-save-hint">加载项目中…</p>
+            <div class="boot-actions">
+                <button type="button" id="btn-continue-game" style="display:none">继续游戏</button>
+                <button type="button" id="btn-select-file" class="boot-btn-primary">选择 episode.json 开始</button>
+                <button type="button" id="btn-new-game">新游戏</button>
+            </div>
+            <input type="file" id="project-upload" accept=".json" style="display: none;">
+        </div>
+    </div>
+
+    <div id="game-prepare-screen" style="display: none;">
+        <div id="game-prepare-window">
+            <h2>正在准备</h2>
+            <p id="game-prepare-hint">正在加载，请稍等…</p>
+            <p id="game-prepare-countdown" hidden></p>
+        </div>
+    </div>
+
+    <div id="game-viewport" style="display: none;">
+        <div id="game-canvas">
+            <div id="layer-bg"></div>
+            <div id="layer-char"></div>
+            <div id="layer-story"></div>
+            <div id="layer-fx"></div>
+            <div id="layer-screen-fx"></div>
+            <div id="layer-owned-gallery" aria-hidden="true"></div>
+            <div id="layer-free-ui" aria-hidden="false"></div>
+            <div id="layer-options">
+                <div id="options-container"></div>
+            </div>
+            <div id="layer-dialogue">
+                <div id="dialogue-column">
+                    <div id="char-name"></div>
+                    <div id="dialogue-box">
+                        <div id="page-indicator" hidden></div>
+                        <div id="text-area">
+                            <div id="text-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="layer-rd-copy" aria-hidden="true"><div id="rd-copy-text"></div></div>
+        </div>
+    </div>
+
+    <script src="play-save.js?v=20260521_playsave3"></script>
+    <script src="love-group-manager.js?v=20260523_love_group"></script>
+    <script src="state.js?v=20260523_relation_set_op"></script>
+    <script src="quiz-config.js?v=20260521_playsave"></script>
+    <script src="random-display-config.js?v=20260521_playsave"></script>
+    <script src="topic-pool-config.js?v=20260624_full_expression_names"></script>
+    <script src="gallery-config.js?v=20260522_gallery_module_fix2"></script>
+    <script src="graphic-reading-config.js?v=20260524_graphic_reading"></script>
+    <script src="item-library-config.js?v=20260620_hidden_map"></script>
+    <script src="hidden-map-config.js?v=20260621_hidden_map_choice_collect"></script>
+    <script src="custom-ui-config.js?v=20260625_free_ui_font_options"></script>
+    <script src="inventory-system.js?v=20260620_hidden_map"></script>
+    <script src="hidden-map-runtime.js?v=20260621_hidden_map_repeat_found_text"></script>
+    <script src="scene-manager.js?v=20260624_keep_cg_between_cg_steps"></script>
+    <script src="story-dialog-prefs.js?v=20260521_playsave"></script>
+    <script src="custom-ui-runtime.js?v=20260625_free_ui_font_options"></script>
+    <script src="ui-manager.js?v=20260624_persistent_cg_no_refade"></script>
+    <script src="storage-manager.js?v=20260531_project_root_runtime_assets"></script>
+    <script src="directory-memory.js?v=20260531_project_root_runtime_assets"></script>
+    <script src="asset-catalog-types.js?v=20260620_shared"></script>
+    <script src="asset-manager.js?v=20260620_shared_catalog"></script>
+    <script src="layout-helpers.js?v=20260521_playsave"></script>
+    <script src="story-fx-catalog.js?v=20260521_playsave"></script>
+    <script src="effects.js?v=20260531_project_root_runtime_assets"></script>
+    <script src="story-fx-engine.js?v=20260624_entry_exit_split"></script>
+    <script src="renderer.js?v=20260620_shared_catalog"></script>
+    <script src="main.js?v=20260531_project_root_runtime_assets"></script>
+</body>
+</html>

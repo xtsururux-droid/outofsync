@@ -1,0 +1,1596 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", "SimSun", sans-serif;
+}
+
+/* 启动界面 */
+#boot-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#boot-window {
+    background: #34495e;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid #ecf0f1;
+}
+
+#boot-window h2 { margin-top: 0; }
+
+#game-prepare-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#game-prepare-window {
+    background: #34495e;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ecf0f1;
+}
+
+#game-prepare-countdown {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 12px 0 0;
+}
+
+.boot-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+    align-items: stretch;
+}
+
+.boot-actions button,
+#btn-select-file {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boot-actions button:hover,
+#btn-select-file:hover { background: #d35400; }
+
+.boot-actions .boot-btn-primary {
+    background: #27ae60;
+}
+
+.boot-actions .boot-btn-primary:hover {
+    background: #1e8449;
+}
+
+#btn-continue-game {
+    background: #3498db;
+}
+
+#btn-continue-game:hover {
+    background: #2980b9;
+}
+
+/* 游戏视口 */
+#game-viewport {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#game-canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#layer-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#layer-bg img {
+    position: absolute;
+    image-rendering: auto;
+}
+
+#layer-char {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+/* 立绘尺寸由 renderer 内联 style 控制（大图/小图槽位） */
+#layer-char img {
+    object-fit: contain;
+}
+
+#layer-free-ui {
+    position: absolute;
+    inset: 0;
+    z-index: 28;
+    pointer-events: none;
+}
+
+.free-ui-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(0);
+    border: 1px solid #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    pointer-events: auto;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1.2;
+    overflow: hidden;
+    text-align: center;
+    white-space: normal;
+}
+
+/* 剧情插画 / CG（全屏等比，在对话框之下、选项层之下） */
+#layer-story {
+    position: absolute;
+    inset: 0;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* 步骤 CG：直接挂在 #layer-story 下的 img/video 等比完整显示（不裁切） */
+#layer-story > img,
+#layer-story > video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
+}
+
+#layer-story.cg-crossfade-active > img,
+#layer-story.cg-crossfade-active > video {
+    position: absolute;
+    inset: 0;
+}
+
+#layer-story.cg-crossfade-active .cg-crossfade-old {
+    z-index: 1;
+}
+
+#layer-story.cg-crossfade-active .cg-crossfade-new {
+    z-index: 2;
+}
+
+/* 旧版场景剧情图：包在 div 里，仍用 contain 完整显示 */
+#layer-story > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#layer-story > div img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+#layer-story.graphic-reading-story-layer {
+    background: #000;
+    overflow: hidden;
+}
+
+.graphic-reading-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    opacity: 0;
+    transition: opacity var(--gr-dur, 1000ms) ease;
+}
+
+.graphic-reading-slide--active {
+    opacity: 1;
+}
+
+.graphic-reading-slide--softGlow {
+    filter: brightness(1.18) saturate(1.08);
+}
+
+.graphic-reading-slide--softGlow.graphic-reading-slide--active {
+    filter: brightness(1) saturate(1);
+}
+
+.graphic-reading-slide--slowZoom {
+    transform: scale(1);
+    transition: opacity var(--gr-dur, 1200ms) ease, transform var(--gr-dur, 1200ms) ease;
+}
+
+.graphic-reading-slide--slowZoom.graphic-reading-slide--active {
+    transform: scale(1.045);
+}
+
+.graphic-reading-slide--darkFade {
+    filter: brightness(0.55);
+}
+
+.graphic-reading-slide--darkFade.graphic-reading-slide--active {
+    filter: brightness(1);
+}
+
+/**
+ * CG 跨步延续且源 CG 步选择「显示时保留立绘」：立绘叠在 CG 媒体之上，对话框与选项仍在其上。
+ * 由 UIManager.syncCgCharacterOverStackClass() 根据 SceneManager._cgSession 与 layer-story 可见性切换。
+ */
+#game-canvas.game-canvas--cg-char-over #layer-story {
+    z-index: 8;
+}
+#game-canvas.game-canvas--cg-char-over #layer-char {
+    z-index: 10;
+}
+#game-canvas.game-canvas--cg-char-over #layer-fx {
+    z-index: 11;
+}
+#game-canvas.game-canvas--cg-char-over #layer-dialogue {
+    z-index: 12;
+}
+
+/* 环境粒子 / 滤镜叠加（在 CG 之上） */
+#layer-fx {
+    position: absolute;
+    inset: 0;
+    z-index: 9;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* 全屏闪白、震动、剧情冲击（可盖住对话框） */
+#layer-screen-fx {
+    position: absolute;
+    inset: 0;
+    z-index: 25;
+    pointer-events: none;
+}
+
+#layer-owned-gallery {
+    position: absolute;
+    inset: 0;
+    z-index: 45;
+    display: none;
+    box-sizing: border-box;
+    padding: 42px 54px 38px;
+    background:
+        linear-gradient(180deg, rgba(14, 13, 13, 0.92), rgba(32, 21, 16, 0.9)),
+        rgba(0, 0, 0, 0.86);
+    color: #fff7ea;
+    pointer-events: auto;
+}
+
+.owned-gallery-panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.owned-gallery-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 38px;
+}
+
+.owned-gallery-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #ffe6b0;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.owned-gallery-count {
+    font-size: 15px;
+    color: rgba(255, 247, 234, 0.72);
+}
+
+.owned-gallery-close {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff7ea;
+    font-size: 28px;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.owned-gallery-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.owned-gallery-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
+    gap: 14px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.owned-gallery-card {
+    min-height: 196px;
+    border: 1px solid rgba(255, 230, 176, 0.32);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.owned-gallery-portrait {
+    height: 154px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(255, 230, 176, 0.12), rgba(0, 0, 0, 0.16));
+    overflow: hidden;
+}
+
+.owned-gallery-portrait img {
+    max-width: 100%;
+    max-height: 178px;
+    object-fit: contain;
+}
+
+.owned-gallery-placeholder {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 247, 234, 0.74);
+    font-size: 34px;
+}
+
+.owned-gallery-name {
+    min-height: 42px;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.25;
+    color: #fff7ea;
+    word-break: break-word;
+}
+
+.owned-gallery-empty {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 247, 234, 0.76);
+    font-size: 21px;
+    line-height: 1.55;
+    white-space: pre-line;
+}
+
+.owned-gallery-return,
+.owned-gallery-page-btn,
+.owned-gallery-preview-close {
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.09);
+    color: #fff7ea;
+    font-size: 16px;
+    line-height: 1;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.owned-gallery-return:hover,
+.owned-gallery-page-btn:hover:not(:disabled),
+.owned-gallery-preview-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.owned-gallery-page-btn:disabled {
+    opacity: 0.38;
+    cursor: default;
+}
+
+.owned-gallery-grid {
+    overflow: hidden;
+    padding-right: 0;
+    align-content: stretch;
+}
+
+.owned-gallery-grid--character {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.owned-gallery-grid--cg {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    align-content: center;
+}
+
+.owned-gallery-card {
+    min-height: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.owned-gallery-card:disabled {
+    cursor: default;
+}
+
+.owned-gallery-card--locked {
+    background: rgba(120, 120, 120, 0.14);
+    border-color: rgba(255, 255, 255, 0.18);
+    filter: grayscale(1);
+}
+
+.owned-gallery-portrait {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+    align-items: center;
+}
+
+.owned-gallery-portrait img,
+.owned-gallery-portrait video {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+}
+
+.owned-gallery-grid--cg .owned-gallery-portrait {
+    aspect-ratio: 16 / 9;
+    flex: 0 0 auto;
+}
+
+.owned-gallery-grid--cg .owned-gallery-card {
+    align-self: center;
+    height: auto;
+}
+
+.owned-gallery-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    min-height: 44px;
+}
+
+.owned-gallery-page {
+    min-width: 72px;
+    text-align: center;
+    color: rgba(255, 247, 234, 0.82);
+    font-size: 17px;
+}
+
+.owned-gallery-preview {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    gap: 14px;
+}
+
+.owned-gallery-preview-close {
+    justify-self: end;
+}
+
+.owned-gallery-preview-media {
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owned-gallery-preview-media img,
+.owned-gallery-preview-media video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.owned-gallery-preview-title {
+    min-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(255, 247, 234, 0.88);
+}
+
+.gallery-fixed-page-size {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.76);
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    #layer-owned-gallery {
+        padding: 24px;
+    }
+
+}
+
+@keyframes fx-heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    18% {
+        transform: scale(1.06);
+    }
+    32% {
+        transform: scale(0.98);
+    }
+    48% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fx-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.fx-starry-night .fx-star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    animation: fx-twinkle 3s ease-in-out infinite;
+    opacity: 0.35;
+}
+
+@keyframes fx-twinkle {
+    0%,
+    100% {
+        opacity: 0.15;
+        transform: scale(0.7);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+.fx-bokeh-dot {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 220, 140, 0.55), rgba(255, 200, 80, 0.08) 60%, transparent 72%);
+    filter: blur(2px);
+    opacity: 0.55;
+    animation: fx-bokeh-float 8s ease-in-out infinite;
+}
+
+@keyframes fx-bokeh-float {
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.45;
+    }
+    50% {
+        transform: translate(-10px, 12px) scale(1.08);
+        opacity: 0.65;
+    }
+}
+
+.fx-soft-glow {
+    box-shadow: inset 0 0 120px rgba(255, 255, 255, 0.35);
+    background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.18), transparent 55%);
+}
+
+.fx-cold-blue {
+    background: linear-gradient(
+        180deg,
+        rgba(120, 170, 255, 0.22),
+        rgba(40, 70, 140, 0.28) 55%,
+        rgba(20, 40, 90, 0.35)
+    );
+    mix-blend-mode: soft-light;
+}
+
+.fx-heart-bubbles .fx-heart::before {
+    content: "♥";
+    color: rgba(255, 160, 200, 0.55);
+    text-shadow: 0 0 10px rgba(255, 120, 180, 0.45);
+}
+
+.fx-heart-bubbles .fx-heart {
+    position: absolute;
+    bottom: -8%;
+    animation: fx-heart-rise 9s linear infinite;
+}
+
+@keyframes fx-heart-rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.85;
+    }
+    100% {
+        transform: translateY(-120%) translateX(12px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.fx-rain-canvas {
+    opacity: 0.65;
+}
+
+.fx-particle-fall {
+    position: absolute;
+    inset: 0;
+}
+
+.fx-particle-fall .fx-particle-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform, opacity;
+    opacity: 0.65;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fx-glow-pulse {
+    position: absolute;
+    inset: -12%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.55), transparent 62%);
+    animation: fx-glow-ring 1s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes fx-glow-ring {
+    0% {
+        transform: scale(0.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.35);
+        opacity: 0;
+    }
+}
+
+.fx-flash-white {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    opacity: 0.95;
+    animation: fx-flash-out 0.18s ease-out forwards;
+}
+
+.fx-flash-dark {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    animation: fx-flash-out 0.12s ease-out forwards;
+}
+
+@keyframes fx-flash-out {
+    to {
+        opacity: 0;
+    }
+}
+
+.fx-vignette-red {
+    position: absolute;
+    inset: -6%;
+    box-shadow: inset 0 0 140px rgba(180, 0, 0, 0.55);
+    background: radial-gradient(circle at 50% 50%, transparent 45%, rgba(120, 0, 0, 0.35) 100%);
+}
+
+.fx-edge-fog {
+    position: absolute;
+    inset: -4%;
+    backdrop-filter: blur(10px);
+    mask-image: radial-gradient(circle at 50% 50%, transparent 48%, rgba(0, 0, 0, 0.85) 100%);
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, transparent 48%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.fx-shatter {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            100deg,
+            rgba(0, 0, 0, 0) 48%,
+            rgba(255, 255, 255, 0.55) 49.5%,
+            rgba(0, 0, 0, 0.35) 51%,
+            rgba(0, 0, 0, 0) 54%
+        ),
+        linear-gradient(
+            80deg,
+            rgba(20, 20, 20, 0.9) 47%,
+            rgba(255, 255, 255, 0.25) 50%,
+            rgba(10, 10, 10, 0.92) 53%
+        );
+    animation: fx-shatter-move 0.85s ease-out forwards;
+    mix-blend-mode: screen;
+    opacity: 0.95;
+}
+
+@keyframes fx-shatter-move {
+    0% {
+        transform: scale(1) skewX(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.06) skewX(4deg) translate(18px, 10px);
+        opacity: 0;
+    }
+}
+
+.fx-frost-frame {
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 0 6px rgba(200, 235, 255, 0.55), inset 0 0 80px rgba(160, 220, 255, 0.35);
+    background: radial-gradient(circle at 50% 100%, rgba(200, 240, 255, 0.18), transparent 55%);
+    animation: fx-frost-in 0.45s ease-out forwards;
+}
+
+.fx-frost-out {
+    opacity: 0;
+    transition: opacity 0.85s ease;
+}
+
+@keyframes fx-frost-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#game-canvas.fx-red-tint {
+    filter: saturate(1.45) contrast(1.08) sepia(0.35);
+}
+
+#game-canvas.fx-grayscale {
+    filter: grayscale(1) brightness(0.92) contrast(1.05);
+}
+
+@keyframes fx-ice-chill {
+    0%,
+    100% {
+        filter: saturate(0.72) hue-rotate(-8deg) brightness(0.94) contrast(1.05);
+    }
+    50% {
+        filter: saturate(0.88) hue-rotate(-20deg) brightness(1.02) contrast(1.12);
+    }
+}
+
+#game-canvas.fx-ice-blue {
+    filter: saturate(0.75) hue-rotate(-12deg) brightness(0.96) contrast(1.08);
+    animation: fx-ice-chill 5.2s ease-in-out infinite;
+}
+
+#game-canvas.fx-high-contrast {
+    filter: contrast(1.55) brightness(1.12);
+}
+
+#layer-dialogue {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+/* 姓名在对话框外上沿左上方；对话框本体可点击翻页 */
+#dialogue-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1100px;
+    max-width: calc(100% - 48px);
+    pointer-events: none;
+}
+
+#dialogue-box {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 12px 18px 12px;
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+    pointer-events: auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* CG 覆盖但对话框不消失：降低背景透明度（文字仍保持高对比） */
+#dialogue-box.dialogue-dim {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+#char-name {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffd700;
+    margin: 0 0 6px 4px;
+    padding: 0;
+    line-height: 1.2;
+    width: fit-content;
+    max-width: 100%;
+    pointer-events: none;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+#text-area {
+    /* 固定为约三行正文高度，避免对话框盖住过多立绘 */
+    min-height: 0;
+    height: calc(22px * 1.6 * 3);
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#text-content {
+    font-size: 22px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left;
+    text-align-last: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 页码：框内右上绝对定位，不占底部整行；多页时由脚本移除 hidden */
+#page-indicator {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(200, 200, 200, 0.95);
+    pointer-events: none;
+    font-variant-numeric: tabular-nums;
+}
+
+#page-indicator[hidden] {
+    display: none !important;
+}
+
+/* 随机展示：屏幕文案（非对话框），在对话层之上、选项层之下 */
+#layer-rd-copy {
+    position: absolute;
+    inset: 0;
+    z-index: 15;
+    display: none;
+    pointer-events: none;
+    box-sizing: border-box;
+    padding: 0 3vw;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+#layer-rd-copy #rd-copy-text {
+    box-sizing: border-box;
+    padding: 12px 16px;
+    text-align: left;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+}
+
+#layer-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: min(78vw, 980px);
+    align-items: center;
+}
+
+.option-btn {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+    width: fit-content;
+    min-width: min(360px, calc(100vw - 80px));
+    max-width: min(72vw, 900px);
+    line-height: 1.45;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.option-btn:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.option-btn.is-locked-question {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 1;
+    filter: none;
+    color: #ffe566;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    background: rgba(8, 8, 10, 0.82);
+    border-color: rgba(255, 220, 90, 0.55);
+    box-shadow:
+        inset 0 2px 14px rgba(0, 0, 0, 0.72),
+        0 4px 18px rgba(0, 0, 0, 0.48),
+        0 0 28px rgba(255, 200, 48, 0.28);
+    text-shadow:
+        0 0 6px rgba(255, 236, 120, 0.95),
+        0 0 16px rgba(255, 196, 48, 0.72),
+        0 0 28px rgba(255, 160, 32, 0.45),
+        0 2px 0 rgba(120, 72, 0, 0.95),
+        0 4px 10px rgba(0, 0, 0, 0.88);
+}
+
+.option-btn.is-locked-question:hover {
+    background: rgba(8, 8, 10, 0.82);
+    color: #ffe566;
+    transform: none;
+    border-color: rgba(255, 220, 90, 0.55);
+}
+
+/* StoryFx v2 引擎动画 */
+@keyframes sfx-v2-pink-breath {
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.52;
+    }
+}
+
+@keyframes sfx-v2-liquid-move {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(0.8%, -0.6%) scale(1.01);
+    }
+    66% {
+        transform: translate(-0.6%, 0.5%) scale(0.99);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes sfx-v2-crack-flash {
+    0%,
+    100% {
+        opacity: 0.55;
+    }
+    50% {
+        opacity: 0.85;
+    }
+}
+
+/* 浪漫类：金沙扫光、雾霭呼吸、流光条、涟漪、柔光域、漂浮光斑 */
+@keyframes sfx-v2-gold-sheen {
+    0%,
+    100% {
+        transform: translate(-1.5%, 0) scale(1.02);
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        transform: translate(1.2%, 0.8%) scale(1.06);
+        filter: hue-rotate(14deg);
+    }
+}
+
+@keyframes sfx-v2-rom-mist-breathe {
+    0%,
+    100% {
+        opacity: 0.72;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.03);
+    }
+}
+
+@keyframes sfx-v2-rom-mist-drift {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    33% {
+        transform: translate(1.2%, -0.8%);
+    }
+    66% {
+        transform: translate(-0.9%, 0.6%);
+    }
+}
+
+@keyframes sfx-v2-rom-sacred-pulse {
+    0%,
+    100% {
+        opacity: 0.55;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.92;
+        transform: scale(1.04);
+    }
+}
+
+@keyframes sfx-v2-rom-ripple {
+    0% {
+        transform: scale(0.92);
+        opacity: 0.35;
+    }
+    55% {
+        transform: scale(1.08);
+        opacity: 0.65;
+    }
+    100% {
+        transform: scale(1.18);
+        opacity: 0.2;
+    }
+}
+
+@keyframes sfx-v2-rom-streak {
+    0% {
+        opacity: 0;
+        transform: rotate(-28deg) translateX(-18%);
+    }
+    22% {
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-28deg) translateX(120%);
+    }
+}
+
+@keyframes sfx-v2-rom-bokeh-float {
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+        opacity: 0.55;
+    }
+    33% {
+        transform: translate(4px, -6px) scale(1.08) rotate(4deg);
+        opacity: 0.88;
+    }
+    66% {
+        transform: translate(-5px, 5px) scale(0.94) rotate(-3deg);
+        opacity: 0.62;
+    }
+}
+
+.hidden-map-runtime {
+    position: absolute;
+    inset: 0;
+    z-index: 45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.hidden-map-runtime--text {
+    pointer-events: none;
+}
+
+#game-canvas.hidden-map-dialogue-active #layer-char {
+    z-index: 50;
+}
+
+#game-canvas.hidden-map-dialogue-active #layer-dialogue {
+    z-index: 51;
+}
+
+.hidden-map-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hidden-map-frame {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hidden-map-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hidden-map-image-fill {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(18px) brightness(0.72);
+    transform: scale(1.05);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hidden-map-spots {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.hidden-map-spot {
+    position: absolute;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: visible;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+}
+
+.hidden-map-spot::before,
+.hidden-map-spot::after {
+    content: '';
+    position: absolute;
+    inset: -38%;
+    border-radius: 999px;
+    pointer-events: none;
+}
+
+.hidden-map-spot::before {
+    background:
+        radial-gradient(ellipse at center, rgba(255, 244, 178, 0.34) 0%, rgba(255, 226, 112, 0.18) 36%, rgba(255, 226, 112, 0) 72%);
+    filter: blur(7px);
+    mix-blend-mode: screen;
+    animation: hidden-map-glow-breathe var(--hidden-map-glow-duration, 2.6s) ease-in-out infinite;
+    animation-delay: var(--hidden-map-glow-delay, 0s);
+}
+
+.hidden-map-spot::after {
+    inset: 18%;
+    background:
+        radial-gradient(circle at 45% 42%, rgba(255, 255, 235, 0.82) 0 4%, rgba(255, 241, 165, 0.32) 5% 14%, rgba(255, 241, 165, 0) 36%);
+    opacity: 0.8;
+    mix-blend-mode: screen;
+    animation: hidden-map-glow-spark var(--hidden-map-glow-duration, 2.6s) ease-in-out infinite;
+    animation-delay: var(--hidden-map-glow-spark-delay, -0.55s);
+}
+
+.hidden-map-spot img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.hidden-map-spot--blink {
+    animation: hidden-map-blink 1s infinite;
+}
+
+.hidden-map-spot--pulse {
+    animation: hidden-map-pulse 1.4s infinite;
+}
+
+.hidden-map-spot.is-found {
+    opacity: 0.22;
+    cursor: default;
+    filter: grayscale(1);
+}
+
+.hidden-map-found-panel {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: block;
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hidden-map-found-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 176px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    box-shadow: none;
+    transform: translate(-50%, -50%);
+}
+
+.hidden-map-found-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.hidden-map-found-thumb {
+    position: relative;
+    width: 112px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-map-found-thumb img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.42));
+}
+
+.hidden-map-found-sparkle {
+    position: absolute;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.45) rotate(45deg);
+    animation: hidden-map-found-sparkle 1.7s ease-in-out infinite;
+}
+
+.hidden-map-found-sparkle::before,
+.hidden-map-found-sparkle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: rgba(255, 250, 190, 0.95);
+    border-radius: 999px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(255, 235, 128, 0.8);
+}
+
+.hidden-map-found-sparkle::before {
+    width: 100%;
+    height: 2px;
+}
+
+.hidden-map-found-sparkle::after {
+    width: 2px;
+    height: 100%;
+}
+
+.hidden-map-found-sparkle--a {
+    left: 10%;
+    top: 28%;
+    animation-delay: -0.2s;
+}
+
+.hidden-map-found-sparkle--b {
+    left: 86%;
+    top: 24%;
+    width: 12px;
+    height: 12px;
+    animation-delay: -0.8s;
+}
+
+.hidden-map-found-sparkle--c {
+    left: 18%;
+    top: 78%;
+    width: 11px;
+    height: 11px;
+    animation-delay: -1.25s;
+}
+
+.hidden-map-found-sparkle--d {
+    left: 78%;
+    top: 76%;
+    width: 14px;
+    height: 14px;
+    animation-delay: -0.45s;
+}
+
+.hidden-map-found-sparkle--e {
+    left: 50%;
+    top: 5%;
+    width: 10px;
+    height: 10px;
+    animation-delay: -1.05s;
+}
+
+.hidden-map-found-name {
+    max-width: 140px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    overflow-wrap: anywhere;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
+}
+
+.hidden-map-collect-choice {
+    position: absolute;
+    inset: 0;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+}
+
+.hidden-map-collect-card {
+    min-width: min(360px, calc(100% - 48px));
+    max-width: min(460px, calc(100% - 48px));
+    padding: 18px 22px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(8, 10, 16, 0.86);
+    box-shadow: 0 14px 42px rgba(0, 0, 0, 0.45);
+    color: #fff;
+    text-align: center;
+}
+
+.hidden-map-collect-text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.hidden-map-collect-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.hidden-map-collect-actions button {
+    min-width: 96px;
+    padding: 8px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hidden-map-collect-actions button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hidden-map-hud {
+    position: absolute;
+    z-index: 2;
+    left: 18px;
+    right: 18px;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    text-shadow: 0 2px 4px #000;
+    pointer-events: none;
+}
+
+.hidden-map-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.hidden-map-count {
+    font-size: 16px;
+}
+
+.hidden-map-finish-btn {
+    margin-left: auto;
+    pointer-events: auto;
+    border: 1px solid rgba(255,255,255,0.6);
+    background: rgba(20,20,20,0.76);
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+@keyframes hidden-map-blink {
+    0%,
+    100% {
+        opacity: 0.38;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes hidden-map-pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+@keyframes hidden-map-glow-breathe {
+    0%,
+    100% {
+        opacity: 0.58;
+        transform: scale(0.92);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.12);
+    }
+}
+
+@keyframes hidden-map-glow-spark {
+    0%,
+    100% {
+        opacity: 0.46;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes hidden-map-found-sparkle {
+    0%,
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.35) rotate(45deg);
+    }
+    42% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.45) rotate(45deg);
+    }
+    58% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.08) rotate(45deg);
+    }
+    74% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.62) rotate(45deg);
+    }
+}
